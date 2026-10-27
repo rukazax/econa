@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /econa/
+Sitemap: https://rukazax.github.io/econa/sitemap.xml
