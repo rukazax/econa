@@ -1,0 +1,24 @@
+{
+  "scope": "closed analytical twin-ellipsoid reference; NOT reconstructed ECONA hull geometry",
+  "hulls_valid_closed_positive_solids": 2,
+  "actual": {
+    "mass_kg": 7726.168145464175,
+    "KB_m": 0.39225834723093306,
+    "waterplane_area_m2": 22.13723464429692,
+    "BM_transverse_m": 27.567667616393507,
+    "waterplane_faces": 2
+  },
+  "analytic_expected": {
+    "mass_kg": 7742.051721527528,
+    "KB_m": 0.3921954183184396,
+    "waterplane_area_m2": 22.15445983367906,
+    "BM_transverse_m": 27.532440871397245
+  },
+  "relative_errors": {
+    "mass_kg": 0.002051597772097934,
+    "KB_m": 0.00016045295165161062,
+    "waterplane_area_m2": 0.0007775043720972436,
+    "BM_transverse_m": 0.001279463203455308
+  },
+  "passed": true
+}

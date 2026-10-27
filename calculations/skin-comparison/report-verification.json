@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "report_sha256": "9bb329721fcad06f9f7555298714bcda46da9e75c70d8b918669b338ed055d52",
+  "report_bytes": 3942880,
+  "pages": 50,
+  "bookmarks": 49,
+  "cad_unchanged": true,
+  "page_text_bounds": "PASS",
+  "full_page_render_review": "All 50 final pages reviewed through rendered contact sheets; pages 36, 42 and 47 reviewed at full resolution. Roof and full-height structure preserved on pages 1, 5 and 6.",
+  "hydrostatics": "6 upright Ship cuts independently verified; 41-station curve verified",
+  "max_volume_relative_error": 8.338860424833182e-14,
+  "mission": "circumnavigation, all continents; route undefined by user",
+  "crew": {
+    "permanent": 2,
+    "passage_max": 8
+  },
+  "pending": "Actual CG/weights/tanks/boundaries/materials needed for full GZ, SinkAndTrim, FEM and RAO",
+  "revision": "3.0",
+  "verified_date": "2026-10-11",
+  "superstructure_correction": {
+    "exterior_pages": [
+      1,
+      5
+    ],
+    "structural_page": 6,
+    "all_20_superstructure_parts_retained": true,
+    "all_10_deck_parts_retained": true,
+    "full_height_preserved": true,
+    "renderer": "per-pixel depth buffer",
+    "structural_requirement": "STRUCTURE-001",
+    "numeric_results_changed": false
+  },
+  "draft_052_revision": {
+    "requirement": "DRAFT-001",
+    "native_ship": "calculations/draft-052/ship-check.json",
+    "independent_comparison": "calculations/draft-052/results.json",
+    "status": "PASS",
+    "upright_only": true,
+    "proposed_mass_budget_not_actual_mass": true,
+    "old_energy_and_resistance_scenarios_not_recomputed_for_proposed_budget": true
+  },
+  "subsequent_design_decisions_not_in_pdf": [],
+  "material_comparison": "calculations/skin-comparison/results.json",
+  "enumerated_material_scenarios": 971,
+  "nominal_motor_voltage_V": 72,
+  "material_calculation_verification": "PASS: isotropic rotation, Et3/12 limit, pressure linearity, ABD equilibrium, mass sums, geometry area match",
+  "material_files_sha256": {
+    "calculations/skin-comparison/inputs.json": "140951a598a13f44db284bbe81b01d32d3d2f1f9d071247011ee750effd2581f",
+    "calculations/skin-comparison/results.json": "f8e9c8534085d903bf085eee831c1654a12744d8dfe36a263f5b404a614ec74f",
+    "tools/concept/compare_skins.py": "f6acbcfe84744124ba807008a4be1061b8504b2c184fb11b12b14707a570e1cc",
+    "tools/concept/verify_skin_comparison.py": "d6706951a79d63ef73bdf629c04f155f403453bb355a8538c0d87b729c8fcb07"
+  },
+  "new_materials_pages": [
+    34,
+    50
+  ],
+  "source_cad_sha256": "7ae0c6e91c30dc92f1f46d84660eb2e1f431d6f56efa7243a7c15a9a608791ef",
+  "calculation_cad_sha256": "2017ed784828a44002d722219b461f099f2ce543aaeb2514e268bc50aad25202",
+  "report_path": "output/pdf/archive/ECONA_Concept_Analysis_v3.0_2026-10-11.pdf",
+  "archived_after_revision": "4.0",
+  "current_report_verification": "calculations/kimi-reconciliation/report-verification.json",
+  "historical_material_input_snapshot": "calculations/kimi-reconciliation/prior-material-calculation"
+}

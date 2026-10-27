@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-18",
+  "status": "PASS",
+  "checks": {
+    "CAD_source_unchanged": true,
+    "calculation_hulls_unchanged": true,
+    "native_ship_two_positive_closed_solids": true,
+    "native_independent_hydro_match": true,
+    "waterplane_independent_match": true,
+    "isotropic_rotation": true,
+    "isotropic_Et3_over12": true,
+    "ABD_equilibrium_pressure_linearity_all14": true,
+    "T11_boundary_053_recomputed": true,
+    "mass_allocations_sum_15pct_dry_reserve": true,
+    "FEM_force_equilibrium_all3": true,
+    "FEM_last_mesh_change_below2pct": true,
+    "ocean_no_coastal_reduction": true,
+    "normal_pressure_envelope_bounded": true,
+    "impact_not_applied_to_whole_bridge": true,
+    "pine_3x8_preserved": true
+  },
+  "scope": "Numerical consistency and stated scenario checks only; not full hull strength or ocean certification",
+  "files_sha256": {
+    "calculations/ocean-structure-2026-10/inputs.json": "18df39723fb2ebccbf3ba2e76d29f5ab9e6ea2f68ecec9147e9346921e0cc74e",
+    "calculations/ocean-structure-2026-10/results.json": "82c02d0a7604f540d8be60cf4257c68c562da413bde000ab869398976f41fb17",
+    "calculations/ocean-structure-2026-10/fem-results.json": "7aea9d8a847a24e19a8309e98c16b46b620988fe53f248efb918acece86a3a7e",
+    "tools/concept/ocean_panel_model.py": "7ed4ca694eabf1cbfbd0b41a3fadc1bdcd989db35bd7b0398b68fa6bad193ace",
+    "tools/concept/ocean_structure_calculate.py": "f43ff6712f83095bc914e56da47b2a70b3a362add72423a927fbcfbb0b39b465",
+    "tools/concept/ocean_stiffener_fem.py": "ef38a241a29fff1cae843233860d70335db23340137a1a7e2a052116802e0890"
+  }
+}

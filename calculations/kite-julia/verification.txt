@@ -1,0 +1,3 @@
+PASS: KPS4, 80 steps, 4 s, Julia 1.12.6
+Lift [N]: 930.2635471601345; drag [N]: 210.45709313402614; tether force [N]: 795.5756652110407
+Package example, fixed ground base, wind 14.5 m/s. NOT vessel sizing or moving-base validation.

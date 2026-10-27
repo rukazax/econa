@@ -1,0 +1,257 @@
+project:
+  name: Ocean autonomous kite-solar-electric catamaran
+  language: ru
+  started: 2026-10-09
+requirements:
+  length_overall_m: 13.6
+  persons_min: 2
+  persons_max: 8
+  operating_area: world circumnavigation and passages around all continents
+  cruise_speed_kn_min: 7
+  cruise_speed_kn_max: 10
+  hull_material: null
+  hull_technology: null
+  structural_system:
+    requirement_id: STRUCTURE-001
+    recorded: 2026-10-11
+    bridge_superstructure_joint_load_path: true
+    include_roof_walls_decks_and_full_height_bulkheads: true
+    reference: docs/03_hull.md
+    implementation_status: geometry_preserved_materials_and_connections_pending
+  primary_propulsion: kite
+  auxiliary_propulsion: BLDC electric motors
+  propulsion_transmission:
+    decision_id: DRIVE-001
+    recorded: '2026-10-16'
+    status: user_approved_design_direction_not_final_hardware
+    primary: HPM_reference_motor_with_speed_reduction
+    alternative: low_speed_motor_with_direct_propeller_drive
+    reduction_type: null
+    reduction_ratio: null
+    toothed_belt_in_dry_accessible_compartment: candidate_to_evaluate
+    reference: docs/06_motors.md
+  energy_storage: LiFePO4
+  charging: solar
+  conventional_sails: false
+  mast: false
+  pv_roof_coverage: all_usable_roof_area
+  navigation_candidates:
+  - OpenCPN
+  - Signal K
+  - pypilot
+  - OpenPlotter
+  - Open Boat Projects
+  intent: Минимальная зависимость от берега, топлива, платных сервисов и внешнего ремонта
+  permanent_crew: 2
+  local_ai:
+    requirement_id: AI-CONTROL-001
+    required: true
+    recorded: 2026-10-10
+    functions:
+    - route_planning_and_replanning
+    - vessel_control
+    - coordination_of_all_onboard_systems
+    deployment: onboard_local
+    internet_required_for_operation: false
+    integration_scope: all_onboard_systems
+    reference: docs/07_navigation.md
+    implementation_status: requirement_recorded_not_implemented
+  max_hull_draft_m: 0.53
+  draft_reference: float hull skin; appendages excluded; revised by user 2026-10-16
+  draft_requirement_id: DRAFT-001
+  motor_reference:
+    family: Golden Motor HPM
+    mechanical_example: HPM-20KW liquid cooled
+    source: research/motors/goldenmotor-hpm/reference.yaml
+    status: reference_adopted_not_final_component_selection
+    nominal_voltage_V: 72
+    voltage_selected_by_user: true
+    voltage_recorded: '2026-10-11'
+unknowns:
+  length_waterline_m: null
+  overall_beam_m: null
+  displacement_light_kg: null
+  displacement_loaded_kg: null
+  payload_kg: null
+  ocean_route_and_season: null
+  days_without_shore: null
+  electric_only_speed_kn: null
+  electric_reserve_hours: null
+  pv_usable_area_m2: null
+  workshop_tools: null
+  build_budget: null
+  flag_and_registration: null
+  polar_route: null
+  local_ai_models_and_compute_hardware: null
+  local_ai_power_and_thermal_budget: null
+  local_ai_autonomy_modes_and_command_limits: null
+status:
+  design: requirements_and_research
+  source_review: preliminary
+  production_ready: false
+design_basis:
+  reference: ECONA
+  reference: docs/22_ECONA_philosophy.md
+  parameters_and_principles: research/ECONA-reference/design-basis.yaml
+  material_selection: open
+  priorities:
+  - low_mass
+  - low_drag
+  - flat_panel_build
+  - bridge_clearance
+  - small_crew_operation
+  - service_access
+  - autonomy
+calculation_workflow:
+  ship_reference: docs/19_ship_workbench.md
+  module_manifest: software/ship-installation.json
+  geometric_readiness: calculations/ship/model-readiness.json
+  inputs_template: calculations/ship/econa-inputs.yaml
+  hull_hydrostatics: FreeCAD Ship with verified local compatibility patch
+  structural_analysis: FreeCAD FEM + Gmsh + CalculiX
+  wave_analysis: Capytaine with explicit reference-frame and matrix verification
+  resistance: method applicability and twin-hull interaction must be justified
+  additional_tools_reference: docs/20_software_completion.md
+  freecad_addons_reference: docs/21_freecad_addons.md
+  tool_manifest: software/engineering-installation.json
+  viscous_cfd: CfdOF + OpenCFD v2512 + Gmsh or cfMesh + ParaView
+  kite_dynamics: Julia + KiteModels with explicit moving-base adaptation
+  motor_magnetics: PYLEECAN + FEMM or GetDP
+  solar_generation: pvlib with route, season, shading and losses
+  marine_opensource_application_map: research/marine-opensource/application-map.yaml
+  marine_energy_input_passport: calculations/energy/marine-opensource/input-passport.yaml
+  FEEMS_RunFeemsSim_status: candidates_not_installed_or_validated_for_ECONA
+  MarPowSim_status: Matlab_Simulink_candidate_not_verified_in_Octave
+  controls: Python Control and CasADi with separate kite flight controller
+  local_ai: Route and vessel-system coordination with validated command interfaces, manual override and
+    independent safety controls
+  material_data_fallback: calculations/materials/historical-fallback.yaml
+  inner_research_reference: docs/30_inner_site_review.md
+  inner_quality_audit: research/inner-site/quality-audit.json
+  motor_forum_reference: docs/31_electrotransport_review.md
+  motor_forum_coverage: research/motors/electrotransport/review.json
+  motor_and_inverter_input_passport: calculations/motors/electrotransport/input-passport.yaml
+  motor_inverter_examples: calculations/motors/electrotransport/examples.json
+design_mass_targets:
+  status: proposed_allocations_not_actual_weights
+  working_loaded_mass_kg: 6500
+  geometry_mass_at_053_sea_kg: 7155.735152201182
+  geometry_mass_at_053_fresh_kg: 6981.205026537738
+  geometry_mass_at_052_sea_kg: 6944.098766779027
+  geometry_mass_at_052_fresh_kg: 6774.73050417466
+  reference: calculations/draft-053/results.json
+  historical_052_reference: calculations/draft-052/results.json
+  max_local_draft_check: pending actual CG, tanks, heel and trim
+material_research:
+  russian_building_foams_requested_by_user: true
+  recorded: '2026-10-11'
+  reference: docs/28_russian_insulation_cores.md
+  experimental_XPS_candidates:
+  - ПЕНОПЛЭКС ТРАК 200/250/400
+  - ТЕХНОНИКОЛЬ CARBON SAND VAN FAS
+  - ПЕНОПЛЭКС 45
+  - ТЕХНОНИКОЛЬ CARBON SOLID 500 ТИП А
+  - ТЕХНОНИКОЛЬ CARBON SOLID 700 ТИП А
+  structural_material_selected: false
+  validation_status: mechanical_inputs_and_panel_tests_pending
+  historical_data_fallback:
+    authorized_by_user: true
+    recorded: '2026-10-11'
+    scope: preliminary calculations when current grade data are unavailable
+    reference: calculations/materials/historical-fallback.yaml
+    preserve_measured_vs_assumed_status: true
+  inner_site_selected_sources: docs/30_inner_selection_catalog.md
+  skin_comparison:
+    reference: docs/32_skin_comparison.md
+    inputs: calculations/skin-comparison/inputs.json
+    results: calculations/skin-comparison/results.json
+    material_selected: false
+    user_pine_layer_thickness_mm:
+    - 8
+    - 8
+    - 8
+    user_adjacent_layer_rotation_deg: 45
+    absolute_pine_direction_assumed_deg:
+    - 0
+    - 45
+    - 90
+    external_T11_layers_below_052: 3
+    external_T11_layers_above_052: 2
+    status: preliminary flat panel scenarios; wet physical tests and whole structure FEM pending
+external_research:
+  marine_opensource_2026_10_18:
+    archive: research/imports/marine-opensource-2026-10-18/ECONA_Marine_OpenSource_Transfer_2026-10-18.zip
+    manifest: research/imports/marine-opensource-2026-10-18/import-manifest.json
+    review: research/marine-opensource/review.json
+    reference: docs/37_marine_opensource.md
+    catalog: docs/38_marine_opensource_catalog.md
+    application_map: research/marine-opensource/application-map.yaml
+    date: '2026-10-18'
+    catalog_entries: 30
+    unique_repository_urls: 29
+    status: registered_and_preliminary_primary_source_review
+    hardware_72V_compatibility_confirmed: false
+    firmware_executed: false
+  transfer_2026_10_18:
+    archive: research/imports/transfer-2026-10-18/ECONA_Transfer_2026-10-18.zip
+    manifest: research/imports/transfer-2026-10-18/import-manifest.json
+    reference: docs/36_transfer_20261018.md
+    candidates: calculations/transfer-2026-10-18/candidate-inputs.yaml
+    review: calculations/transfer-2026-10-18/review.json
+    date: '2026-10-18'
+    status: studied_and_accounted_as_comparison_candidates
+    models_identical_to_prior_import: true
+    imported_claims_are_not_automatically_approved: true
+    pine_3x8_baseline_preserved: true
+    battery_80kWh_and_diesel_2x8kW_are_separate_scenario: true
+  kimi_2026_10_15:
+    archive: research/imports/kimi-2026-10-15/ECONA_chat_transfer_2026-10-15.zip
+    manifest: research/imports/kimi-2026-10-15/import-manifest.json
+    reconciliation: docs/33_kimi_reconciliation.md
+    merged_context: docs/34_merged_project_context.md
+    audit: calculations/kimi-reconciliation/audit.json
+    imported_claims_are_not_automatically_approved: true
+    nominal_battery_24S2P_candidate_kWh: 48.2304
+    diesel_15kW_400L_is_separate_unapproved_option: true
+    date: '2026-10-16'
+  full_chat_2026_10_19:
+    manifest: research/imports/full-chat-2026-10-19/import-manifest.json
+    review: research/imports/full-chat-2026-10-19/repository-review.json
+    reconciliation: research/imports/full-chat-2026-10-19/reconciliation.json
+    reference: docs/40_full_transfer_application.md
+    motor_nominal_voltage_V_preserved: 72
+    marine_catalog_duplicates: 30
+    additional_links_reviewed: 7
+    new_hardware_selected: false
+    firmware_executed: false
+  open_boat_projects_2026_10_19:
+    site: https://open-boat-projects.org/
+    reference: docs/41_open_boat_projects_review.md
+    catalog: docs/42_open_boat_projects_catalog.md
+    manifest: research/open-boat-projects-2026-10-19/pages-manifest.json
+    upstream_review: research/open-boat-projects-2026-10-19/upstream-review.json
+    quality_audit: research/open-boat-projects-2026-10-19/quality-audit.json
+    application_map: research/open-boat-projects-2026-10-19/application-map.yaml
+    selected_articles: 38
+    upstream_repositories: 7
+    interactive_BOM_references: 6
+    hardware_selected: false
+    third_party_code_executed: false
+current_report:
+  revision: '5.0'
+  date: '2026-10-18'
+  path: output/pdf/ECONA_Ocean_Structure_2026-10-18.pdf
+  scope: preliminary_ocean_mass_loads_skin_stiffeners_and_conditional_global_sections
+  full_connected_hull_FEM_completed: false
+  physical_materials_and_connections_approved: false
+  reference: docs/39_ocean_structure_review.md
+previous_consolidated_report:
+  revision: '4.0'
+  date: '2026-10-16'
+  path: output/pdf/ECONA_Merged_Review_2026-10-16.pdf
+controller_design:
+  status: proposed_specification_not_implemented
+  contract: calculations/control/vcu-ems/design-contract.yaml
+  FMEA_candidates: calculations/control/vcu-ems/fmea-candidates.csv
+  reference: docs/40_full_transfer_application.md
+  instrument_data_contract: calculations/navigation/open-boat-projects/data-contract.yaml

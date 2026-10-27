@@ -1,0 +1,77 @@
+revision: 1
+date: 2026-10-11
+status: research_input_template_not_physical_model
+review: docs/31_electrotransport_review.md
+nominal_motor_system_voltage_V: 72
+nominal_voltage_user_approved: true
+motor_reference: research/motors/goldenmotor-hpm/reference.yaml
+hardware_selected: false
+material_selected: false
+geometry_model: null
+geometry_sha256: null
+motor_inputs:
+  required_continuous_shaft_power_W: null
+  required_continuous_shaft_torque_Nm: null
+  mechanical_rpm_range: null
+  transient_duration_s: null
+  topology: null
+  slots: null
+  pole_pairs: null
+  winding_scheme: null
+  winding_connection: null
+  turns_definition: null
+  conductor_copper_area_mm2: null
+  copper_fill_fraction: null
+  magnetic_steel_BH_curve_source: null
+  magnetic_steel_loss_curve_source: null
+  magnet_material_temperature_curves_source: null
+  radial_or_axial_airgap_mm: null
+  resistance_phase_ohm: null
+  resistance_line_line_ohm: null
+  resistance_measurement_temperature_C: null
+  Ld_H: null
+  Lq_H: null
+  inductance_method_frequency_current_source: null
+  back_emf_convention_line_phase_rms_peak: null
+  rotor_flux_linkage_Wb: null
+  Kv_rpm_per_V_with_convention: null
+  sensor_type_angle_offset_and_phase_order: null
+  inertia_kg_m2: null
+  verified_efficiency_map: null
+  verified_thermal_limits: null
+inverter_inputs:
+  dc_min_nom_max_V: null
+  measured_switching_regen_spike_V: null
+  continuous_dc_current_A: null
+  transient_dc_current_A_duration_s: null
+  continuous_phase_current_A_rms: null
+  transient_phase_current_A_convention_duration_s: null
+  hardware_board_revision: null
+  firmware_commit_sha256_and_configuration: null
+  mosfet_gate_driver_sensor_and_capacitor_datasheets: null
+  pwm_frequency_Hz: null
+  current_sample_and_control_frequency_Hz: null
+  deadtime_s: null
+  controller_loss_and_cooling_model: null
+  current_measurement_range_and_uncertainty: null
+  input_timeout_and_safe_state: null
+  independent_overcurrent_shutdown: null
+  can_protocol_and_isolation: null
+energy_inputs:
+  lifepo4_cell_model: null
+  series_cells: null
+  charge_discharge_limits_vs_soc_temperature: null
+  BMS_contactor_fuse_and_precharge_ratings: null
+  regenerated_energy_acceptance_and_failure_strategy: null
+  cooling_auxiliary_power_W: null
+  installed_drive_mass_kg: null
+method:
+  magnetic: PYLEECAN_FEMM_or_GetDP_with_verified_backend
+  control: Octave_or_Python_with_explicit_electrical_conventions
+  electronics: KiCad_with_power_thermal_and_EMC_review
+  physical_validation: torque_rpm_DC_power_phase_currents_and_temperatures
+limits:
+  - Forum statements are attributed observations or hypotheses, not measured ECONA inputs.
+  - Unknown physical values remain null; illustrative arithmetic is in examples.json.
+  - AI and navigation cannot replace inverter current loops or independent emergency protection.
+  - All installed drive masses remain in the current draft 0.53 m budget; the earlier 0.52 m limit is historical.

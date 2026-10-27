@@ -1,0 +1,49 @@
+{
+  "welding": {
+    "weld_neighbour_radius_mm": 0.01,
+    "maximum_vertex_displacement_mm": 0.0048830902357708175,
+    "removed_collapsed_facets": 624,
+    "triangles": 19140,
+    "volume_m3": 25.216818888781116,
+    "relative_volume_change": 7.941612607241339e-11,
+    "euler_number": 2,
+    "watertight": true,
+    "winding_consistent": true,
+    "method": "Only near-coincident vertices clustered and averaged; collapsed triangles removed; no remeshing or smoothing",
+    "remaining_skin_triangles": 18827,
+    "remaining_top_triangles": 261,
+    "remaining_aft_triangles": 52
+  },
+  "final_faces": 19140,
+  "valid": true,
+  "closed": true,
+  "volume_m3": 25.216818888781077,
+  "relative_volume_error_to_mesh": 1.5497533863873692e-15,
+  "elapsed_seconds": 18.088638067245483,
+  "cuts": [
+    {
+      "test_draft_mm": 400,
+      "wires": 1,
+      "faces": 1,
+      "valid": true,
+      "one_hull_waterplane_m2": 8.997724832734129,
+      "elapsed_seconds": 1.1408240795135498
+    },
+    {
+      "test_draft_mm": 600,
+      "wires": 1,
+      "faces": 1,
+      "valid": true,
+      "one_hull_waterplane_m2": 10.758911036782774,
+      "elapsed_seconds": 1.1544501781463623
+    },
+    {
+      "test_draft_mm": 800,
+      "wires": 1,
+      "faces": 1,
+      "valid": true,
+      "one_hull_waterplane_m2": 11.863961710758641,
+      "elapsed_seconds": 1.2270002365112305
+    }
+  ]
+}

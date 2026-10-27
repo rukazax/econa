@@ -1,0 +1,10 @@
+revision: 1
+date: '2026-10-11'
+decision_source: 'direct user instruction: motor voltage 72 V'
+motor_nominal_voltage_V: 72
+selected_voltage_test: 72V_2020, serial 2072122003001
+final_motor_power_selected: false
+battery_series_cells: null
+controller_maximum_dc_voltage_V: null
+note: Nominal motor-system voltage; not the maximum charged battery voltage. Historical
+  51.2/102.4 V examples are not current selections.

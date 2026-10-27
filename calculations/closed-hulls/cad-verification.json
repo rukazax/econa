@@ -1,0 +1,113 @@
+{
+  "source": {
+    "document": "ECONA_ECONA",
+    "source_file": "project/models/ECONA/ECONA_ECONA.FCStd",
+    "disk_sha256": "7ae0c6e91c30dc92f1f46d84660eb2e1f431d6f56efa7243a7c15a9a608791ef",
+    "snapshot_sha256": "2ef14b384045325934dec10ba5c04bd757f55874b9334839a62af617f1a77a1b",
+    "touched": false,
+    "axis": "X forward; Y port; Z up; original coordinates mm; original Z is not waterline",
+    "objects": 137,
+    "skins": [
+      {
+        "name": "PortSkin",
+        "faces": 19447,
+        "triangles": 19442,
+        "points": 9884,
+        "area_m2": 58.006598524161134,
+        "brep_sha256": "8b994ca1a91eb98b6558e5e8c065b727e463e77b376c28c9117f0ba9bf31a087"
+      },
+      {
+        "name": "StarboardSkin",
+        "faces": 19447,
+        "triangles": 19442,
+        "points": 9884,
+        "area_m2": 58.006598524161106,
+        "brep_sha256": "565484fd12b741e49e37d60882071e06d9067429f5e9f8304e2a00e1bff7907b"
+      }
+    ]
+  },
+  "coordinates": {
+    "units": "mm",
+    "axes": "X forward; Y port; Z up",
+    "translation_from_source_mm": [
+      -6800,
+      0,
+      486.100006
+    ],
+    "baseline": "Z=0 at lowest point of hull skins; appendages excluded",
+    "x_reference": "X=0 at half of skin LOA; NOT assigned Lpp origin",
+    "design_waterline": "NOT_ASSIGNED"
+  },
+  "hulls": [
+    {
+      "name": "PortHull",
+      "shape_type": "Solid",
+      "solids": 1,
+      "closed": true,
+      "valid": true,
+      "positive_volume_m3": 25.216818890813972,
+      "centroid_calculation_m": [
+        -0.6413695773806694,
+        2.9907852103735575,
+        1.1960340000234386
+      ],
+      "faces": 19713,
+      "original_skin_faces": 19447,
+      "new_top_faces": 265,
+      "new_aft_faces": 1,
+      "volume_relative_error_to_independent_mesh": 1.1992273476256061e-12,
+      "elapsed_seconds": 32.35896944999695
+    },
+    {
+      "name": "StarboardHull",
+      "shape_type": "Solid",
+      "solids": 1,
+      "closed": true,
+      "valid": true,
+      "positive_volume_m3": 25.216818890813954,
+      "centroid_calculation_m": [
+        -0.6413695773806694,
+        -2.9907852103735624,
+        1.1960340000234386
+      ],
+      "faces": 19713,
+      "original_skin_faces": 19447,
+      "new_top_faces": 265,
+      "new_aft_faces": 1,
+      "volume_relative_error_to_independent_mesh": 1.2000726676544777e-12,
+      "elapsed_seconds": 44.202641010284424
+    }
+  ],
+  "mesh_reference": {
+    "method": "Exact original CAD facets plus ruled triangulated top strips and planar aft cap; no original facet moved or removed",
+    "coordinate_units": "mm; original Z not waterline",
+    "skin_faces": 19447,
+    "skin_boundary_edges": 319,
+    "top_triangles": 265,
+    "aft_outline_vertices": 54,
+    "aft_mesh_triangles": 52,
+    "watertight": true,
+    "consistent_winding": true,
+    "euler_number": 2,
+    "volume_m3": 25.21681889078374,
+    "centroid_original_m": [
+      6.158630422622779,
+      2.990785210373685,
+      0.7099339940235505
+    ],
+    "area_closed_m2": 80.21929525204726,
+    "top_closure_min_original_z_m": 0.439900419,
+    "keel_original_z_m": -0.48610000600000003,
+    "limitations": [
+      "Artificial top closure is NOT the actual deck or an approved flood boundary",
+      "Upright hydrostatic cuts must stay below the lowest top closure; heel requires explicit closure-intersection check",
+      "Fully enclosed volume is NOT payload or permissible displacement",
+      "The transom cap is a geometric closure, not a designed watertight bulkhead"
+    ]
+  },
+  "scope": "Independent displacement-envelope solids; closures do not design deck, structure, or flood openings",
+  "source_file_unchanged": true,
+  "stage": "Intermediate exact closure before regularization; current output is final-model-verification.json",
+  "intermediate_output_location": "models/ECONA/ECONA_ECONA_CalculationHulls.FCStd",
+  "intermediate_output_sha256": "6305238b49be7b38a60f6aed4b7f3064986e214cb93f0ce178b7f4cfcf44a1f0"
+}

@@ -1,0 +1,345 @@
+{
+  "date": "2026-10-18",
+  "scope": "Incoming README and both CSV fully read; geometry hashes compared; scenario arithmetic only",
+  "input_manifest": "research/imports/transfer-2026-10-18/import-manifest.json",
+  "input_files_sha256": {
+    "ECONA_Transfer_2026-10-18/01_Исходные_модели/13600 в работе.skp": "810aac46d95ae09c3a764e8dc0718ed102ac1ebbbf1ad63704a47c9638723861",
+    "ECONA_Transfer_2026-10-18/01_Исходные_модели/13600 в работе.obj": "4df2e1200a1e1e0630ff64092d928b8fd8e30e9c0b9aa11ed7fb2a446db03a8b",
+    "ECONA_Transfer_2026-10-18/02_Документация/README.md": "fd37f8446e811dfa77c8abf1e9882e72b41f0c242d25871da8483adecf10d67c",
+    "ECONA_Transfer_2026-10-18/03_Таблицы/варианты.csv": "c2bcd0a5aca4574f1264cbf10c07ea6b8b1be2080226c7ed700726c1e086fe37",
+    "ECONA_Transfer_2026-10-18/03_Таблицы/массы_предварительные.csv": "26e36b630dda1341f34b7742ad1808b443cfc014e0d53f143de38747284325d1"
+  },
+  "models_identical_to_previous_import": true,
+  "new_CAD_model": false,
+  "canonical_CAD_replaced": false,
+  "mass_scenario": {
+    "component_sum_kg": 4740.0,
+    "arithmetic_pass": true,
+    "loaded_mass_known": false,
+    "omitted_unallocated_mass_kg": null,
+    "remaining_to_proposed_6500kg": 1760.0,
+    "remaining_to_upright_053_salt_limit_kg": 2415.7351522011822,
+    "remaining_to_upright_053_fresh_limit_kg": 2241.2050265377384,
+    "generator_and_fuel_kg": 800,
+    "subtotal_without_generator_and_fuel_kg": 3940.0,
+    "comparison_note": "Arithmetic room for omitted mass, NOT demonstrated payload or safe reserve; 15% dry-mass reserve not applied"
+  },
+  "PV": {
+    "incoming_assumed_area_m2": 28,
+    "measured_roof_projection_m2": 24.679534948644317,
+    "excess_over_gross_roof_m2": 3.320465051355683,
+    "extra_ratio": 0.13454325854458937,
+    "incoming_kWp": [
+      5.9,
+      6.2
+    ],
+    "implied_module_efficiency_on_28m2": [
+      0.21071428571428572,
+      0.22142857142857145
+    ],
+    "same_efficiency_gross_roof_kWp": [
+      5.200330578464339,
+      5.464754167199813
+    ],
+    "scope": "STC arithmetic only; not panel layout or generation forecast"
+  },
+  "battery": {
+    "nominal_energy_kWh_candidate": 80,
+    "mass_kg_assumed": 570,
+    "implied_Wh_per_kg": 140.35087719298247,
+    "actual_pack_mass_kg": null,
+    "selected": false
+  },
+  "materials": {
+    "new_variants_are_comparison_candidates": true,
+    "user_pine_baseline_mm_preserved": [
+      8,
+      8,
+      8
+    ],
+    "new_pine_mm": [
+      4,
+      5
+    ],
+    "incoming_core_materials": [
+      "SAN",
+      "PVC"
+    ],
+    "core_grade_properties": null,
+    "mass_assumptions": {
+      "pine_density_kg_m3": 500,
+      "FSF_density_kg_m3": 680,
+      "core_density_kg_m3": 80,
+      "glass_dry_kg_m2": 0.385,
+      "resin_fiber_mass_ratio": 1.0,
+      "glue_kg_m2_per_interface": 0.22,
+      "inner_seal_kg_m2": 0.15,
+      "finish_below_kg_m2": 0.6,
+      "finish_above_kg_m2": 0.4,
+      "status": "Scenario densities and processing consumptions from prior project inputs; core80 from incoming README, not a SAN/PVC grade passport",
+      "excluded": [
+        "structural members",
+        "joints/patch allowances",
+        "fittings",
+        "procurement waste",
+        "actual moisture variation"
+      ]
+    },
+    "panels": [
+      {
+        "id": "bottom5",
+        "name": "Низ: ФСФ4+4 / пена25 / сосна5",
+        "FSF_total_mm": 8,
+        "pine_total_mm": 5,
+        "core_mm": 25,
+        "outer_T11_layers": 3,
+        "bond_interfaces": 3,
+        "components_kg_m2": {
+          "FSF": 5.44,
+          "pine": 2.5,
+          "core": 2.0,
+          "glass_plus_resin": 2.31,
+          "glue": 0.66,
+          "seal": 0.15,
+          "finish": 0.6
+        },
+        "panel_kg_m2": 13.66,
+        "scope": "mass_only_no_strength_or_stiffness_prediction",
+        "mechanical_validation": null
+      },
+      {
+        "id": "bottom6",
+        "name": "Низ: ФСФ4+4 / пена25 / сосна6",
+        "FSF_total_mm": 8,
+        "pine_total_mm": 6,
+        "core_mm": 25,
+        "outer_T11_layers": 3,
+        "bond_interfaces": 3,
+        "components_kg_m2": {
+          "FSF": 5.44,
+          "pine": 3.0,
+          "core": 2.0,
+          "glass_plus_resin": 2.31,
+          "glue": 0.66,
+          "seal": 0.15,
+          "finish": 0.6
+        },
+        "panel_kg_m2": 14.16,
+        "scope": "mass_only_no_strength_or_stiffness_prediction",
+        "mechanical_validation": null
+      },
+      {
+        "id": "upper",
+        "name": "Борт: ФСФ4+4 / пена25 / сосна4",
+        "FSF_total_mm": 8,
+        "pine_total_mm": 4,
+        "core_mm": 25,
+        "outer_T11_layers": 2,
+        "bond_interfaces": 3,
+        "components_kg_m2": {
+          "FSF": 5.44,
+          "pine": 2.0,
+          "core": 2.0,
+          "glass_plus_resin": 1.54,
+          "glue": 0.66,
+          "seal": 0.15,
+          "finish": 0.4
+        },
+        "panel_kg_m2": 12.190000000000001,
+        "scope": "mass_only_no_strength_or_stiffness_prediction",
+        "mechanical_validation": null
+      },
+      {
+        "id": "deck",
+        "name": "Палуба/крыша: ФСФ4 / пена25 / ФСФ4",
+        "FSF_total_mm": 8,
+        "pine_total_mm": 0,
+        "core_mm": 25,
+        "outer_T11_layers": 2,
+        "bond_interfaces": 2,
+        "components_kg_m2": {
+          "FSF": 5.44,
+          "pine": 0.0,
+          "core": 2.0,
+          "glass_plus_resin": 1.54,
+          "glue": 0.44,
+          "seal": 0.15,
+          "finish": 0.4
+        },
+        "panel_kg_m2": 9.97,
+        "scope": "mass_only_no_strength_or_stiffness_prediction",
+        "mechanical_validation": null
+      },
+      {
+        "id": "bulkhead",
+        "name": "Переборка: ФСФ6,5 / пена10 / ФСФ6,5",
+        "FSF_total_mm": 13,
+        "pine_total_mm": 0,
+        "core_mm": 10,
+        "outer_T11_layers": 0,
+        "bond_interfaces": 2,
+        "components_kg_m2": {
+          "FSF": 8.84,
+          "pine": 0.0,
+          "core": 0.8,
+          "glass_plus_resin": 0.0,
+          "glue": 0.44,
+          "seal": 0.3,
+          "finish": 0
+        },
+        "panel_kg_m2": 10.379999999999999,
+        "scope": "mass_only_no_strength_or_stiffness_prediction",
+        "mechanical_validation": null
+      },
+      {
+        "id": "pine4_below",
+        "name": "Сосна3×4, below",
+        "FSF_total_mm": 0,
+        "pine_total_mm": 12,
+        "core_mm": 0,
+        "outer_T11_layers": 3,
+        "bond_interfaces": 2,
+        "components_kg_m2": {
+          "FSF": 0.0,
+          "pine": 6.0,
+          "core": 0.0,
+          "glass_plus_resin": 2.31,
+          "glue": 0.44,
+          "seal": 0.15,
+          "finish": 0.6
+        },
+        "panel_kg_m2": 9.5,
+        "scope": "mass_only_no_strength_or_stiffness_prediction",
+        "mechanical_validation": null
+      },
+      {
+        "id": "pine4_above",
+        "name": "Сосна3×4, above",
+        "FSF_total_mm": 0,
+        "pine_total_mm": 12,
+        "core_mm": 0,
+        "outer_T11_layers": 2,
+        "bond_interfaces": 2,
+        "components_kg_m2": {
+          "FSF": 0.0,
+          "pine": 6.0,
+          "core": 0.0,
+          "glass_plus_resin": 1.54,
+          "glue": 0.44,
+          "seal": 0.15,
+          "finish": 0.4
+        },
+        "panel_kg_m2": 8.53,
+        "scope": "mass_only_no_strength_or_stiffness_prediction",
+        "mechanical_validation": null
+      },
+      {
+        "id": "pine5_below",
+        "name": "Сосна3×5, below",
+        "FSF_total_mm": 0,
+        "pine_total_mm": 15,
+        "core_mm": 0,
+        "outer_T11_layers": 3,
+        "bond_interfaces": 2,
+        "components_kg_m2": {
+          "FSF": 0.0,
+          "pine": 7.5,
+          "core": 0.0,
+          "glass_plus_resin": 2.31,
+          "glue": 0.44,
+          "seal": 0.15,
+          "finish": 0.6
+        },
+        "panel_kg_m2": 11.0,
+        "scope": "mass_only_no_strength_or_stiffness_prediction",
+        "mechanical_validation": null
+      },
+      {
+        "id": "pine5_above",
+        "name": "Сосна3×5, above",
+        "FSF_total_mm": 0,
+        "pine_total_mm": 15,
+        "core_mm": 0,
+        "outer_T11_layers": 2,
+        "bond_interfaces": 2,
+        "components_kg_m2": {
+          "FSF": 0.0,
+          "pine": 7.5,
+          "core": 0.0,
+          "glass_plus_resin": 1.54,
+          "glue": 0.44,
+          "seal": 0.15,
+          "finish": 0.4
+        },
+        "panel_kg_m2": 10.03,
+        "scope": "mass_only_no_strength_or_stiffness_prediction",
+        "mechanical_validation": null
+      },
+      {
+        "id": "pine8_below",
+        "name": "Сосна3×8, below",
+        "FSF_total_mm": 0,
+        "pine_total_mm": 24,
+        "core_mm": 0,
+        "outer_T11_layers": 3,
+        "bond_interfaces": 2,
+        "components_kg_m2": {
+          "FSF": 0.0,
+          "pine": 12.0,
+          "core": 0.0,
+          "glass_plus_resin": 2.31,
+          "glue": 0.44,
+          "seal": 0.15,
+          "finish": 0.6
+        },
+        "panel_kg_m2": 15.5,
+        "scope": "mass_only_no_strength_or_stiffness_prediction",
+        "mechanical_validation": null
+      },
+      {
+        "id": "pine8_above",
+        "name": "Сосна3×8, above",
+        "FSF_total_mm": 0,
+        "pine_total_mm": 24,
+        "core_mm": 0,
+        "outer_T11_layers": 2,
+        "bond_interfaces": 2,
+        "components_kg_m2": {
+          "FSF": 0.0,
+          "pine": 12.0,
+          "core": 0.0,
+          "glass_plus_resin": 1.54,
+          "glue": 0.44,
+          "seal": 0.15,
+          "finish": 0.4
+        },
+        "panel_kg_m2": 14.53,
+        "scope": "mass_only_no_strength_or_stiffness_prediction",
+        "mechanical_validation": null
+      }
+    ],
+    "full_structure_mass_from_new_panels": null
+  },
+  "open_items": [
+    "Assign actual CAD surfaces to bottom/bow/upper/deck/bulkhead zones; 45+35=80m2 incoming hull area is not measured116.013197m2",
+    "Resolve absolute orientation per layer; plywood itself is cross-laminated and README orientation examples are ambiguous",
+    "Verify curved forming, springback, glue voids, moisture, interface shear/peel, impact and wet fatigue",
+    "Dimension keel/stringers/wood inserts and bridge-superstructure connections with whole structure loads",
+    "Obtain actual installed battery/motor/drive/generator/tank/cooling masses and CG",
+    "Resolve optional fuel dependence against kite/solar autonomy; fuel400kg not400L",
+    "No new full CFD/FEM/GZ or sea-going performance inferred"
+  ],
+  "current_requirements_preserved": {
+    "draft_m": 0.53,
+    "motor_nominal_V": 72,
+    "drive_direction": "HPM_with_reduction",
+    "roof_superstructure_preserved": true,
+    "baseline_autonomy": "kite_solar_LiFePO4",
+    "pine_layers_mm": [
+      8,
+      8,
+      8
+    ]
+  },
+  "PDF_updated": false
+}

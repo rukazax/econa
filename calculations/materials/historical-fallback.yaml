@@ -1,0 +1,54 @@
+policy_id: MATERIAL-FALLBACK-001
+recorded: '2026-10-11'
+authorized_by_user: true
+user_instruction: Если не можешь найти данные для современных плит, при расчётах подставляй
+  старые
+status: authorized_preliminary_input_policy_no_structural_calculation_performed
+priority:
+- current grade data if available
+- historical data for same grade if available
+- historical similar material with explicit analogy
+- unavailable property remains unresolved until documented assumption or source
+record_for_each_substitution:
+- property and units
+- source ID, page and year
+- original grade and test method
+- target candidate
+- test/loading direction or unknown flag
+- reason for analogy
+- uncertainty and sensitivity scenarios
+historical_modulus_defaults:
+- target_candidate: ПЕНОПЛЭКС 45 (H16)
+  source_id: H25
+  source_page: 116
+  source_year: 2010
+  original_grade: ПЕНОПЛЭКС 45, ТУ 5767-006-56925804–2007
+  published_property_label: Модуль упругости
+  published_method: СОЮЗДОРНИИ
+  reference_modulus_MPa: 18
+  use: provisional historical substitution, not current batch measurement
+  loading_direction: not specified in table
+- target_candidate: CARBON SOLID 500 (H17)
+  source_id: H25
+  source_page: 117
+  source_year: 2010
+  original_grade: ТЕХНОПЛЕКС 45…500, ТУ 2244-047-17925162–2006
+  published_property_label: Модуль упругости
+  published_method: СОЮЗДОРНИИ
+  reference_modulus_MPa: 20
+  use: provisional analogy between high-compression XPS grades; not identity of products
+  loading_direction: not specified in table
+restrictions:
+- Do not relabel published generic modulus as measured shear modulus G.
+- Before using reference modulus as FEM Young modulus explicitly record a model assumption
+  about method, direction and constitutive model.
+- Do not infer identical density, shear, bond or fatigue from compression class.
+- Historical or analog-derived values remain assumptions when reporting strength,
+  masses and draft.
+- Use sensitivity checks; no statistical confidence interval claimed.
+- Retain complete superstructure and roof load path.
+future_inputs:
+- numerical historical shear modulus and shear strength for comparable foam
+- bond behavior of chosen resin and skin
+- creep and temperature behavior
+source_reference: research/hull-materials/polystyrene-mechanics/reference-values.json

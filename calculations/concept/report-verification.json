@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-10",
+  "report_pages": 29,
+  "bookmarks": 28,
+  "pdf_text": "selectable; all 29 pages extracted",
+  "text_page_bounds": "passed",
+  "visual_qa": "all 29 pages inspected via four contact sheets; changed pages 17 and 28 re-rendered and inspected",
+  "main_model_unchanged": true,
+  "calculation_verification": {
+    "independent_volume_quadrature": "passed",
+    "independent_centroid_quadrature": "passed",
+    "hourly_pv_energy_balance": "passed",
+    "hourly_storage_energy_balance": "passed",
+    "battery_bounds": "passed",
+    "force_cross_product_orthogonality": "passed",
+    "main_model_hash": "unchanged"
+  },
+  "site_library_verification": "passed",
+  "files": [
+    {
+      "path": "models/ECONA/ECONA_ECONA.FCStd",
+      "bytes": 11339060,
+      "sha256": "7ae0c6e91c30dc92f1f46d84660eb2e1f431d6f56efa7243a7c15a9a608791ef"
+    },
+    {
+      "path": "calculations/concept/inputs.yaml",
+      "bytes": 4622,
+      "sha256": "5d532c6c2beddcba1fd32f6fd12c94090e363a879077f25cb69f35bcc445711b"
+    },
+    {
+      "path": "calculations/concept/results.json",
+      "bytes": 44710,
+      "sha256": "3e2e185f7199f687c7f2b231136e200fbe3a67b3ea580fadb6aaa68de174fcae"
+    },
+    {
+      "path": "calculations/concept/freecad-surrogate-verification.json",
+      "bytes": 736,
+      "sha256": "56adfb9d5ece907606bb68fc7213f042ba8f95c5a5db4bea27220a07002cd5ae"
+    },
+    {
+      "path": "output/pdf/archive/ECONA_Concept_Analysis_v1_2026-10-10.pdf",
+      "bytes": 1699596,
+      "sha256": "58a85f4dd235235d3bbae7ad4ffd2857317b4b22d9d8d7047ee9b4dcc9671069"
+    }
+  ],
+  "revision": 1,
+  "historical": true
+}

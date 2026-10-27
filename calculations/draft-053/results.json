@@ -1,0 +1,95 @@
+{
+  "date": "2026-10-16",
+  "status": "PASS",
+  "requirement": {
+    "id": "DRAFT-001",
+    "max_draft_m": 0.53,
+    "reference": "float hull skin",
+    "appendages_included": false,
+    "confirmed_by_user": true,
+    "supersedes_m": 0.52
+  },
+  "independent": {
+    "draft_m": 0.53,
+    "volume_m3": 6.981205026537738,
+    "mass_kg": 7155.735152201182,
+    "LCB_m": -0.7010496247230684,
+    "KB_m": 0.32785918906079736,
+    "wetted_area_m2": 34.532497623748476,
+    "integral_x2_m5": 58.723986128766164,
+    "integral_y2_m5": 66.54123653533777,
+    "mass_fresh_kg": 6981.205026537738,
+    "increment_vs_052_salt_kg": 211.6363854221554
+  },
+  "native_ship": {
+    "date": "2026-10-16",
+    "FreeCAD": [
+      "1",
+      "1",
+      "4",
+      "20260928 (Git shallow)",
+      "Unknown",
+      "2026/09/28 13:46:34",
+      "(HEAD detached at 4fd3bf320)",
+      "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+    ],
+    "source_sha256": "2017ed784828a44002d722219b461f099f2ce543aaeb2514e268bc50aad25202",
+    "records": [
+      {
+        "name": "PortHull",
+        "solids": 1,
+        "closed": true,
+        "valid": true,
+        "volume_mm3": 25216818888.781033,
+        "faces": 19140
+      },
+      {
+        "name": "StarboardHull",
+        "solids": 1,
+        "closed": true,
+        "valid": true,
+        "volume_mm3": 25216818888.781033,
+        "faces": 19140
+      }
+    ],
+    "both_positive_closed_valid_solids": true,
+    "draft_m": 0.53,
+    "mass_kg": 7155.735152201414,
+    "volume_m3": 6.981205026537965,
+    "LCB_m": -0.7010496247231142,
+    "KB_m": 0.32785918906080375,
+    "waterplane_m2": 20.71415110776115,
+    "IT_m4": 197.7164527942308,
+    "IL_origin_m4": 224.43555885807945,
+    "waterplanes": 2,
+    "elapsed_seconds": 39.12946796417236,
+    "source_unchanged": true,
+    "status": "PASS"
+  },
+  "relative_errors": {
+    "mass_kg": 3.241851231905457e-14,
+    "volume_m3": 3.241851231905457e-14,
+    "LCB_m": 6.52811138479592e-14,
+    "KB_m": 1.942890293094024e-14
+  },
+  "mass_limits_upright": [
+    {
+      "density_kg_m3": 1025,
+      "mass_kg": 7155.735152201182
+    },
+    {
+      "density_kg_m3": 1000,
+      "mass_kg": 6981.205026537738
+    }
+  ],
+  "proposed_working_mass_kg_unchanged": 6500,
+  "margin_below_geometric_salt_limit_kg": 655.7351522011822,
+  "7200kg_exceeds_salt_limit_by_kg": 44.264847798817755,
+  "source_unchanged": true,
+  "limitations": [
+    "upright geometry only; not an approved safe displacement",
+    "actual weights/CG/tanks and local draft with trim/heel pending",
+    "skin layup comparison still uses historic 0.52m boundary",
+    "PDF v4.0 predates this change"
+  ]
+}

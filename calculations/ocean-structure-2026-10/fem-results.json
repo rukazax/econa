@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "model_file": "ECONA_Ocean_Stiffener_Study.FCStd",
+  "records": [
+    {
+      "mesh_size_mm": 50,
+      "nodes": 2380,
+      "tetra10": 1168,
+      "load_total_N": 7200.0,
+      "reaction_total_N": 7199.9999222,
+      "max_displacement_z_mm": 2.021918,
+      "reaction_relative_error": 1.0805555561432811e-08,
+      "CalculiX": "system2.21; see log",
+      "material": "equivalent isotropic E7000MPa nu0.3; not real orthotropic plywood",
+      "purpose": "convergence and local cross-section response"
+    },
+    {
+      "mesh_size_mm": 30,
+      "nodes": 5382,
+      "tetra10": 2649,
+      "load_total_N": 7199.999999999998,
+      "reaction_total_N": 7199.999734019613,
+      "max_displacement_z_mm": 2.038569,
+      "reaction_relative_error": 3.6941720349403795e-08,
+      "CalculiX": "system2.21; see log",
+      "material": "equivalent isotropic E7000MPa nu0.3; not real orthotropic plywood",
+      "purpose": "convergence and local cross-section response"
+    },
+    {
+      "mesh_size_mm": 18,
+      "nodes": 15062,
+      "tetra10": 7508,
+      "load_total_N": 7199.99999999999,
+      "reaction_total_N": 7200.000035395312,
+      "max_displacement_z_mm": 2.075661,
+      "reaction_relative_error": 4.916015594602641e-09,
+      "CalculiX": "system2.21; see log",
+      "material": "equivalent isotropic E7000MPa nu0.3; not real orthotropic plywood",
+      "purpose": "convergence and local cross-section response"
+    }
+  ],
+  "Euler_Bernoulli_without_shear_mm": 1.6968959248478737,
+  "relative_change_last_mesh": 0.018195116280096624,
+  "scope": "local equivalent-isotropic numerical study; differs from orthotropic structural design and includes cross-section distortion; no whole-vessel FEM claim"
+}

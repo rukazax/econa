@@ -1,0 +1,31 @@
+status: reference_specs_not_physical_ECONA_inputs
+anchors:
+- source_id: OBP15
+  kind: author_article_specification_not_ECONA_selected_part
+  device: Yachta described revision
+  supply_V:
+  - 6
+  - 25
+  current_A_at_12V: 0.03
+  power_W_at_12V: 0.36
+  mass_kg_approx: 0.21
+  report_frequency_Hz: 1
+  uncertainties: hardware_revision calibration installation mass and losses not validated
+- source_id: OBP25
+  device: MCS described revision
+  supply_V:
+  - 8
+  - 28
+  direct_72V_supported: false
+- source_id: OBP31
+  device: modified WiFi battery monitor
+  supply_V:
+  - 10
+  - 38
+  negative_current_energy_accounted: false
+  selected: false
+- source_id: OBP34
+  device: 3kW belt drive example
+  motor_nominal_V: 48
+  motor_label_power_W: 3000
+  selected_for_ECONA: false

@@ -1,0 +1,115 @@
+date: '2026-10-19'
+status: proposed_design_contract_not_implemented_or_hardware_validated
+reference: docs/40_full_transfer_application.md
+requirements_preserved:
+  motor_nominal_voltage_V: 72
+  max_hull_skin_draft_m: 0.53
+  primary_drive: HPM_with_reduction_direction_only
+  local_onboard_AI_required: true
+  manual_priority: true
+  fast_loops_and_hardware_protection_independent_of_AI: true
+  generator_is_optional: true
+  shore_power_required_for_operation: false
+power_topology:
+  traction_channels:
+  - port
+  - starboard
+  DC_shared_or_sectioned: null
+  shared_failure_domains_to_analyse:
+  - battery
+  - DC_bus
+  - CAN
+  - VCU_power
+  - cooling
+  - emergency_circuit
+  BMS_is_supervision_and_protection_not_assumed_power_converter: true
+physical_limits:
+  battery_series_cells: null
+  DC_Vmin_Vnom_Vmax_V:
+    minimum: null
+    nominal: 72
+    maximum: null
+  charge_current_limit_vs_SOC_temperature_A: null
+  discharge_current_limit_vs_SOC_temperature_A: null
+  regen_voltage_limit_V: null
+  surge_voltage_V: null
+  continuous_power_each_shaft_W: null
+  DC_bus_capacitance_F: null
+  precharge_resistance_ohm: null
+  precharge_timeout_ms: null
+  contactor_weld_detection_threshold: null
+  cooling_derate_curve: null
+  control_backup_energy_Wh: null
+message_contract:
+  required_fields:
+  - source
+  - value
+  - unit
+  - sign_convention
+  - measurement_time
+  - receive_time
+  - sequence
+  - validity
+  - mode
+  - protocol_version
+  CAN_ids: null
+  endianness: null
+  message_periods_ms: null
+  timeouts_ms: null
+  NMEA2000_gateway_or_protocol_choice: null
+  device_restart_and_replay_policy: null
+  permitted_command_authorities:
+  - manual_post
+  - bounded_local_AI_via_VCU
+  command_acknowledgement_and_completion_policy: null
+candidate_states:
+- 'OFF'
+- PRECHECK
+- PRECHARGE
+- READY
+- PROPULSION
+- CHARGE
+- HYDROGENERATION
+- DEGRADED
+- FAULT_ISOLATED
+state_machine:
+  transitions_and_guards: null
+  hydrogeneration_enabled_by_default: false
+  fault_response_by_operating_mode: null
+  no_universal_shutdown_or_brake_action_assumed: true
+  per_channel_and_energy_supervisor_state_composition: null
+  simultaneous_PV_charge_and_propulsion_handling: define_from_power_balance_not_assumed_mutually_exclusive
+control_constraints:
+  respect_per_channel_and_total_battery_limits: true
+  charge_and_discharge_permissions_are_distinct: true
+  preserve_navigation_priority_power: true
+  AI_output_requires_validation_before_actuation: true
+  hydrogeneration_requires_accepted_energy_path_and_drag_calculation: true
+  contactor_opening_requires_regen_and_rotating_motor_analysis: true
+mass_and_energy_interfaces:
+  installed_BOM_mass_kg: null
+  CG_xyz_frame_and_units: null
+  power_profile_W: null
+  losses_and_heat_W: null
+  mass_budget_existing_line: electrics_CAN_AI; replace identified allowance, do not
+    blindly add a second full controller allowance
+  feed_to:
+  - energy_balance
+  - cooling
+  - Ship_Weight_LoadCondition_after_physical_inputs
+acceptance_work:
+  energy_balance_and_sign_conventions: null
+  power_allocation_and_manoeuvring: null
+  BMS_and_inverter_communication_loss: null
+  AI_failure_and_manual_override: null
+  precharge_and_welded_contactor: null
+  channel_fault_isolation_and_common_causes: null
+  full_battery_or_cold_charge_rejection: null
+  EMC_corrosion_environmental_trials: null
+  stand_tests_and_sea_trials: null
+instrument_telemetry:
+  contract: calculations/navigation/open-boat-projects/data-contract.yaml
+  SignalK_battery_current_positive: charging
+  instrument_network_not_assumed_same_as_traction_CAN: true
+  stale_data_must_not_gain_fresh_measurement_timestamp: true
+  physical_power_and_isolation_to_select: true

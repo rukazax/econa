@@ -1,0 +1,108 @@
+{
+  "source": {
+    "document": "ECONA_ECONA",
+    "source_file": "project/models/ECONA/ECONA_ECONA.FCStd",
+    "disk_sha256": "7ae0c6e91c30dc92f1f46d84660eb2e1f431d6f56efa7243a7c15a9a608791ef",
+    "snapshot_sha256": "2ef14b384045325934dec10ba5c04bd757f55874b9334839a62af617f1a77a1b",
+    "touched": false,
+    "axis": "X forward; Y port; Z up; original coordinates mm; original Z is not waterline",
+    "objects": 137,
+    "skins": [
+      {
+        "name": "PortSkin",
+        "faces": 19447,
+        "triangles": 19442,
+        "points": 9884,
+        "area_m2": 58.006598524161134,
+        "brep_sha256": "8b994ca1a91eb98b6558e5e8c065b727e463e77b376c28c9117f0ba9bf31a087"
+      },
+      {
+        "name": "StarboardSkin",
+        "faces": 19447,
+        "triangles": 19442,
+        "points": 9884,
+        "area_m2": 58.006598524161106,
+        "brep_sha256": "565484fd12b741e49e37d60882071e06d9067429f5e9f8304e2a00e1bff7907b"
+      }
+    ]
+  },
+  "coordinates": {
+    "units": "mm",
+    "axes": "X forward; Y port; Z up",
+    "translation_from_source_mm": [
+      -6800,
+      0,
+      486.100006
+    ],
+    "baseline": "Original minimum hull-skin Z, excluding appendages",
+    "x_reference": "Half of hull LOA, not assigned Lpp midship",
+    "design_waterline": "NOT_ASSIGNED"
+  },
+  "working_geometry_regularization": {
+    "weld_neighbour_radius_mm": 0.01,
+    "maximum_vertex_displacement_mm": 0.0048830902357708175,
+    "removed_collapsed_facets": 624,
+    "triangles": 19140,
+    "volume_m3": 25.216818888781116,
+    "relative_volume_change": 7.941612607241339e-11,
+    "euler_number": 2,
+    "watertight": true,
+    "winding_consistent": true,
+    "method": "Only near-coincident vertices clustered and averaged; collapsed triangles removed; no remeshing or smoothing",
+    "remaining_skin_triangles": 18827,
+    "remaining_top_triangles": 261,
+    "remaining_aft_triangles": 52
+  },
+  "hulls": [
+    {
+      "name": "PortHull",
+      "type": "Solid",
+      "solids": 1,
+      "closed": true,
+      "valid": true,
+      "positive_volume_m3": 25.21681888878103,
+      "faces": 19140,
+      "surface_type": "Plane",
+      "centroid_calculation_m": [
+        -0.6413695802670464,
+        2.9907852088973286,
+        1.1960340000683707
+      ],
+      "bounds_calculation_mm": [
+        -6800.0,
+        6800.0,
+        1808.589844,
+        3698.999996,
+        0.0,
+        2436.299917
+      ]
+    },
+    {
+      "name": "StarboardHull",
+      "type": "Solid",
+      "solids": 1,
+      "closed": true,
+      "valid": true,
+      "positive_volume_m3": 25.21681888878103,
+      "faces": 19140,
+      "surface_type": "Plane",
+      "centroid_calculation_m": [
+        -0.6413695802670464,
+        -2.9907852088973286,
+        1.1960340000683707
+      ],
+      "bounds_calculation_mm": [
+        -6800.0,
+        6800.0,
+        -3698.999996,
+        -1808.589844,
+        0.0,
+        2436.299917
+      ]
+    }
+  ],
+  "physical_limits": "Conditional top cap; upright waterplanes below Z=926.000425mm only; heel and trim require separate cap immersion checks",
+  "output_model": "models/ECONA/ECONA_ECONA_CalculationHulls.FCStd",
+  "output_sha256": "2017ed784828a44002d722219b461f099f2ce543aaeb2514e268bc50aad25202",
+  "source_file_unchanged": true
+}

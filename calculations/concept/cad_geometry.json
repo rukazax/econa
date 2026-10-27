@@ -1,0 +1,2404 @@
+{
+  "source": "models/ECONA/ECONA_ECONA.FCStd",
+  "source_sha256": "7ae0c6e91c30dc92f1f46d84660eb2e1f431d6f56efa7243a7c15a9a608791ef",
+  "units": "m",
+  "coordinates": "X forward, Y port, Z upward; original Z datum is not a waterline",
+  "objects": 137,
+  "parts": [
+    {
+      "name": "PortSkin",
+      "label": "Обшивка левого поплавка — Y > 0",
+      "category": "hull_skin",
+      "area_m2": 58.0065985234803,
+      "triangles": 19442,
+      "bounds_m": [
+        [
+          0.0,
+          1.8085898440000001,
+          -0.48610000600000003
+        ],
+        [
+          13.6,
+          3.698999996,
+          1.950199911
+        ]
+      ]
+    },
+    {
+      "name": "StarboardSkin",
+      "label": "Обшивка правого поплавка — Y < 0",
+      "category": "hull_skin",
+      "area_m2": 58.0065985234803,
+      "triangles": 19442,
+      "bounds_m": [
+        [
+          0.0,
+          -3.698999996,
+          -0.48610000600000003
+        ],
+        [
+          13.6,
+          -1.8085898440000001,
+          1.950199911
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Decks_Surface_000",
+      "label": "_1 · Surface_000",
+      "category": "Decks",
+      "area_m2": 47.71806821298742,
+      "triangles": 16101,
+      "bounds_m": [
+        [
+          1.405400390625,
+          -2.677,
+          0.828327392578125
+        ],
+        [
+          13.916759765625,
+          2.677,
+          1.9439000244140625
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Decks_Surface_001",
+      "label": "_1 · Surface_001",
+      "category": "Decks",
+      "area_m2": 9.420420385173406,
+      "triangles": 1636,
+      "bounds_m": [
+        [
+          0.9,
+          1.8085999755859374,
+          0.816244384765625
+        ],
+        [
+          13.043037109375,
+          3.67648486328125,
+          1.950199951171875
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Decks_Surface_002",
+      "label": "_1 · Surface_002",
+      "category": "Decks",
+      "area_m2": 10.174645360798527,
+      "triangles": 1482,
+      "bounds_m": [
+        [
+          0.9,
+          -3.64995556640625,
+          0.8223838500976562
+        ],
+        [
+          13.092099609375,
+          -1.8085999755859374,
+          1.950199951171875
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Decks_Surface_003",
+      "label": "FrontCol · Surface_003",
+      "category": "Decks",
+      "area_m2": 12.44387988274687,
+      "triangles": 8239,
+      "bounds_m": [
+        [
+          0.89967236328125,
+          -2.142,
+          0.8229000244140625
+        ],
+        [
+          13.916759765625,
+          2.142,
+          1.860414306640625
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Decks_Surface_004",
+      "label": "FrontCol · Surface_004",
+      "category": "Decks",
+      "area_m2": 7.152011659745086,
+      "triangles": 2355,
+      "bounds_m": [
+        [
+          1.663,
+          1.808594970703125,
+          0.832760498046875
+        ],
+        [
+          13.092099609375,
+          3.671782470703125,
+          1.950199951171875
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Decks_Surface_005",
+      "label": "FrontCol · Surface_005",
+      "category": "Decks",
+      "area_m2": 4.205963608056777,
+      "triangles": 968,
+      "bounds_m": [
+        [
+          1.663,
+          -3.676484375,
+          0.83273193359375
+        ],
+        [
+          12.30535546875,
+          -1.8085999755859374,
+          1.950199951171875
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Decks_Surface_006",
+      "label": "_2 · Surface_006",
+      "category": "Decks",
+      "area_m2": 0.08287523154975003,
+      "triangles": 110,
+      "bounds_m": [
+        [
+          9.98518359375,
+          -0.3393023376464844,
+          1.6550557861328126
+        ],
+        [
+          10.1044599609375,
+          0.3406495056152344,
+          1.6855418701171876
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Decks_Surface_009",
+      "label": "_15 · Surface_009",
+      "category": "Decks",
+      "area_m2": 2.680479928076738,
+      "triangles": 502,
+      "bounds_m": [
+        [
+          7.0,
+          -2.37360009765625,
+          1.7789276123046875
+        ],
+        [
+          9.118900390625,
+          2.37360009765625,
+          2.71589990234375
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Decks_Surface_011",
+      "label": "_15 · Surface_011",
+      "category": "Decks",
+      "area_m2": 1.3655885244796941,
+      "triangles": 290,
+      "bounds_m": [
+        [
+          8.856822265625,
+          -3.016125,
+          1.391135009765625
+        ],
+        [
+          13.043037109375,
+          -1.85899462890625,
+          1.7993394775390625
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Decks_Surface_015",
+      "label": "_20 · Surface_015",
+      "category": "Decks",
+      "area_m2": 0.03789510035129982,
+      "triangles": 18,
+      "bounds_m": [
+        [
+          3.252,
+          -2.180699951171875,
+          1.8280889892578125
+        ],
+        [
+          4.000000244140625,
+          -2.130673828125,
+          1.950199951171875
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Internals_Surface_000",
+      "label": "_1 · Surface_003",
+      "category": "Internals",
+      "area_m2": 1.1821411016841423,
+      "triangles": 1482,
+      "bounds_m": [
+        [
+          6.418,
+          -2.101193603515625,
+          1.337506103515625
+        ],
+        [
+          9.8768671875,
+          2.35893212890625,
+          1.82710986328125
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Internals_Surface_001",
+      "label": "_1 · Surface_004",
+      "category": "Internals",
+      "area_m2": 3.8579977318291365,
+      "triangles": 1826,
+      "bounds_m": [
+        [
+          1.763,
+          1.8085999755859374,
+          0.05179960632324219
+        ],
+        [
+          13.6,
+          3.556960693359375,
+          1.8280889892578125
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Internals_Surface_002",
+      "label": "_1 · Surface_005",
+      "category": "Internals",
+      "area_m2": 4.873948215123292,
+      "triangles": 810,
+      "bounds_m": [
+        [
+          -4.18647863771604e-17,
+          -3.65597216796875,
+          0.38829302978515623
+        ],
+        [
+          13.23825,
+          -1.808594970703125,
+          1.639300048828125
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Internals_Surface_003",
+      "label": "FrontCol · Surface_006",
+      "category": "Internals",
+      "area_m2": 6.628589495104522,
+      "triangles": 3255,
+      "bounds_m": [
+        [
+          0.89967236328125,
+          -2.060783203125,
+          0.8205834350585938
+        ],
+        [
+          13.916759765625,
+          2.34865966796875,
+          1.860414306640625
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Internals_Surface_004",
+      "label": "FrontCol · Surface_007",
+      "category": "Internals",
+      "area_m2": 21.767165649553583,
+      "triangles": 6935,
+      "bounds_m": [
+        [
+          -6.28181571837123e-18,
+          1.808594970703125,
+          -0.4324713134765625
+        ],
+        [
+          13.6,
+          3.688438720703125,
+          2.11860400390625
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Internals_Surface_005",
+      "label": "FrontCol · Surface_008",
+      "category": "Internals",
+      "area_m2": 19.140945773352314,
+      "triangles": 3880,
+      "bounds_m": [
+        [
+          1.663,
+          -3.68843505859375,
+          -0.1942469482421875
+        ],
+        [
+          13.6,
+          -1.8085999755859374,
+          1.950199951171875
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Internals_Surface_010",
+      "label": "_15 · Surface_010",
+      "category": "Internals",
+      "area_m2": 2.33569109316208,
+      "triangles": 262,
+      "bounds_m": [
+        [
+          3.2453515625,
+          2.18158251953125,
+          0.7464533081054687
+        ],
+        [
+          5.237,
+          3.562548583984375,
+          0.7465638427734375
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Internals_Surface_011",
+      "label": "_15 · Surface_012",
+      "category": "Internals",
+      "area_m2": 0.0030737695683048898,
+      "triangles": 1,
+      "bounds_m": [
+        [
+          12.90983203125,
+          -3.0367470703125,
+          1.391135009765625
+        ],
+        [
+          13.043037109375,
+          -2.999361572265625,
+          1.4766812744140625
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Internals_Surface_015",
+      "label": "_20 · Surface_016",
+      "category": "Internals",
+      "area_m2": 0.39482774861920045,
+      "triangles": 28,
+      "bounds_m": [
+        [
+          3.252,
+          -2.130699951171875,
+          1.361300048828125
+        ],
+        [
+          4.000000244140625,
+          -2.130673828125,
+          1.950199951171875
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Internals_Surface_028",
+      "label": "_16 · Surface_028",
+      "category": "Internals",
+      "area_m2": 0.07055144678231756,
+      "triangles": 79,
+      "bounds_m": [
+        [
+          5.237,
+          2.6158671875,
+          -0.08674954986572266
+        ],
+        [
+          6.22632763671875,
+          3.540410888671875,
+          -0.08539958953857422
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Superstructure_Surface_000",
+      "label": "_1 · Surface_006",
+      "category": "Superstructure",
+      "area_m2": 17.848676506803834,
+      "triangles": 4056,
+      "bounds_m": [
+        [
+          1.9027001953125,
+          -2.677,
+          1.9439000244140625
+        ],
+        [
+          7.0,
+          2.37360009765625,
+          2.953893310546875
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Superstructure_Surface_001",
+      "label": "_1 · Surface_007",
+      "category": "Superstructure",
+      "area_m2": 0.5979829403479493,
+      "triangles": 225,
+      "bounds_m": [
+        [
+          7.0,
+          1.8085999755859374,
+          1.7993389892578124
+        ],
+        [
+          8.856822265625,
+          2.677,
+          2.42625537109375
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Superstructure_Surface_002",
+      "label": "_1 · Surface_008",
+      "category": "Superstructure",
+      "area_m2": 0.5646749830250396,
+      "triangles": 252,
+      "bounds_m": [
+        [
+          7.0,
+          -2.677,
+          1.7993394775390625
+        ],
+        [
+          8.856822265625,
+          -1.864,
+          2.44089990234375
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Superstructure_Surface_003",
+      "label": "FrontCol · Surface_009",
+      "category": "Superstructure",
+      "area_m2": 3.376796060528266,
+      "triangles": 1411,
+      "bounds_m": [
+        [
+          4.000000244140625,
+          -2.37560009765625,
+          1.0329000244140625
+        ],
+        [
+          7.907685546875,
+          2.37560009765625,
+          2.85789990234375
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Superstructure_Surface_004",
+      "label": "FrontCol · Surface_010",
+      "category": "Superstructure",
+      "area_m2": 1.6401934741459165,
+      "triangles": 1726,
+      "bounds_m": [
+        [
+          3.065,
+          1.8675106201171876,
+          1.76660400390625
+        ],
+        [
+          7.0001328125,
+          3.52668603515625,
+          2.636006591796875
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Superstructure_Surface_005",
+      "label": "FrontCol · Surface_011",
+      "category": "Superstructure",
+      "area_m2": 1.6827903491117473,
+      "triangles": 523,
+      "bounds_m": [
+        [
+          3.152,
+          -2.90153759765625,
+          1.8002010498046874
+        ],
+        [
+          7.0,
+          -1.82,
+          2.6523642578125
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Superstructure_Surface_009",
+      "label": "_15 · Surface_013",
+      "category": "Superstructure",
+      "area_m2": 6.443498465590782,
+      "triangles": 1431,
+      "bounds_m": [
+        [
+          2.16030029296875,
+          -2.37560009765625,
+          2.38389990234375
+        ],
+        [
+          7.0,
+          2.37560009765625,
+          2.94210302734375
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Superstructure_Surface_014",
+      "label": "_25 · Surface_014",
+      "category": "Superstructure",
+      "area_m2": 1.0443216100393986,
+      "triangles": 341,
+      "bounds_m": [
+        [
+          4.36938134765625,
+          2.43174853515625,
+          2.0262379150390624
+        ],
+        [
+          7.0,
+          2.70563671875,
+          2.4237958984375
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Superstructure_Surface_016",
+      "label": "_27 · Surface_016",
+      "category": "Superstructure",
+      "area_m2": 0.19607507662343165,
+      "triangles": 36,
+      "bounds_m": [
+        [
+          7.0,
+          -2.62013525390625,
+          1.936600341796875
+        ],
+        [
+          8.1529501953125,
+          -2.36741943359375,
+          2.29957080078125
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Superstructure_Surface_017",
+      "label": "_28 · Surface_017",
+      "category": "Superstructure",
+      "area_m2": 1.0633243902160516,
+      "triangles": 266,
+      "bounds_m": [
+        [
+          4.3359921875,
+          -2.707595947265625,
+          2.0263685302734373
+        ],
+        [
+          7.0,
+          -2.430895751953125,
+          2.424372314453125
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Superstructure_Surface_018",
+      "label": "_22 · Surface_018",
+      "category": "Superstructure",
+      "area_m2": 1.3881424795573196,
+      "triangles": 456,
+      "bounds_m": [
+        [
+          7.0,
+          -1.864,
+          2.0269000244140627
+        ],
+        [
+          7.0,
+          1.864,
+          2.44089990234375
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Superstructure_Surface_019",
+      "label": "_22 · Surface_019",
+      "category": "Superstructure",
+      "area_m2": 0.01958228279311203,
+      "triangles": 36,
+      "bounds_m": [
+        [
+          7.0,
+          1.864,
+          2.0269000244140627
+        ],
+        [
+          7.0,
+          1.914,
+          2.44089990234375
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Superstructure_Surface_020",
+      "label": "_22 · Surface_020",
+      "category": "Superstructure",
+      "area_m2": 0.019582282793112027,
+      "triangles": 36,
+      "bounds_m": [
+        [
+          7.0,
+          -1.914,
+          2.0269000244140627
+        ],
+        [
+          7.0,
+          -1.864,
+          2.44089990234375
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Superstructure_Surface_025",
+      "label": "_23 · Surface_025",
+      "category": "Superstructure",
+      "area_m2": 2.8335487227672562,
+      "triangles": 1081,
+      "bounds_m": [
+        [
+          4.000000244140625,
+          -1.87,
+          0.9329000244140625
+        ],
+        [
+          4.000000244140625,
+          1.896800048828125,
+          2.75789990234375
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Superstructure_Surface_026",
+      "label": "_23 · Surface_026",
+      "category": "Superstructure",
+      "area_m2": 0.03502846449538319,
+      "triangles": 45,
+      "bounds_m": [
+        [
+          4.000000244140625,
+          1.893392578125,
+          1.9579000244140625
+        ],
+        [
+          4.000000244140625,
+          1.996800048828125,
+          2.591177978515625
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Superstructure_Surface_027",
+      "label": "_23 · Surface_027",
+      "category": "Superstructure",
+      "area_m2": 0.05005813749475775,
+      "triangles": 40,
+      "bounds_m": [
+        [
+          4.000000244140625,
+          -1.97,
+          1.9579000244140625
+        ],
+        [
+          4.000000244140625,
+          -1.82,
+          2.6523642578125
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Superstructure_Surface_033",
+      "label": "_24 · Surface_033",
+      "category": "Superstructure",
+      "area_m2": 0.19616833544148454,
+      "triangles": 36,
+      "bounds_m": [
+        [
+          7.0,
+          2.367418701171875,
+          1.9365999755859375
+        ],
+        [
+          8.15294970703125,
+          2.62022412109375,
+          2.299570556640625
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Superstructure_Surface_034",
+      "label": "_20 · Surface_034",
+      "category": "Superstructure",
+      "area_m2": 0.03903903926373052,
+      "triangles": 517,
+      "bounds_m": [
+        [
+          3.065,
+          -2.8182587890625,
+          1.897564697265625
+        ],
+        [
+          3.089,
+          -2.13451513671875,
+          2.13904931640625
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Superstructure_Surface_035",
+      "label": "FrontCol · Surface_035",
+      "category": "Superstructure",
+      "area_m2": 0.019852309668436638,
+      "triangles": 93,
+      "bounds_m": [
+        [
+          3.065,
+          -2.807866455078125,
+          1.897564697265625
+        ],
+        [
+          3.089,
+          -2.13451513671875,
+          2.14256396484375
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Superstructure_Surface_037",
+      "label": "_26 · Surface_037",
+      "category": "Superstructure",
+      "area_m2": 0.008130389695524577,
+      "triangles": 100,
+      "bounds_m": [
+        [
+          3.071,
+          -2.49343701171875,
+          1.76656396484375
+        ],
+        [
+          3.083,
+          -2.48143701171875,
+          2.11856396484375
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_000_8500_0",
+      "label": "X=8.500 м · _1 · Surface_000",
+      "category": "Transverse",
+      "area_m2": 6.7102909089601266e-09,
+      "triangles": 3,
+      "bounds_m": [
+        [
+          8.500001953125,
+          1.2846805419921874,
+          1.8270977783203124
+        ],
+        [
+          8.500001953125,
+          1.7397923583984376,
+          1.8271024169921875
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_001_5237_0",
+      "label": "X=5.237 м · _1 · Surface_001",
+      "category": "Transverse",
+      "area_m2": 0.7703875797543405,
+      "triangles": 117,
+      "bounds_m": [
+        [
+          5.237,
+          2.1808916015625,
+          -0.08656097412109375
+        ],
+        [
+          5.237,
+          3.655873046875,
+          1.26299951171875
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_001_7000_0",
+      "label": "X=7.000 м · _1 · Surface_001",
+      "category": "Transverse",
+      "area_m2": 0.9061668720426391,
+      "triangles": 340,
+      "bounds_m": [
+        [
+          7.0,
+          2.615741455078125,
+          -0.4861000061035156
+        ],
+        [
+          7.0,
+          3.685,
+          1.9439000244140625
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_001_3152_0",
+      "label": "X=3.152 м · _1 · Surface_001",
+      "category": "Transverse",
+      "area_m2": 0.7373005094708054,
+      "triangles": 208,
+      "bounds_m": [
+        [
+          3.152,
+          2.280707275390625,
+          1.255813720703125
+        ],
+        [
+          3.152,
+          3.686294677734375,
+          1.8117640380859374
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_001_900_0",
+      "label": "X=0.900 м · _1 · Surface_001",
+      "category": "Transverse",
+      "area_m2": 1.4989338804514366e-08,
+      "triangles": 2,
+      "bounds_m": [
+        [
+          0.9,
+          2.155643310546875,
+          0.36970001220703125
+        ],
+        [
+          0.9,
+          2.538,
+          0.6246005249023437
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_001_8500_0",
+      "label": "X=8.500 м · _1 · Surface_001",
+      "category": "Transverse",
+      "area_m2": 0.00022728394797353008,
+      "triangles": 10,
+      "bounds_m": [
+        [
+          8.5,
+          2.53462548828125,
+          -0.19930000305175782
+        ],
+        [
+          8.5,
+          3.616,
+          0.39544479370117186
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_001_4000_0",
+      "label": "X=4.000 м · _1 · Surface_001",
+      "category": "Transverse",
+      "area_m2": 5.7724462858304735e-08,
+      "triangles": 14,
+      "bounds_m": [
+        [
+          4.000000244140625,
+          3.51,
+          -0.2098000030517578
+        ],
+        [
+          4.000000244140625,
+          3.699,
+          1.535199951171875
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_001_2400_0",
+      "label": "X=2.400 м · _1 · Surface_001",
+      "category": "Transverse",
+      "area_m2": 3.487243504214448e-08,
+      "triangles": 5,
+      "bounds_m": [
+        [
+          2.4,
+          3.64995556640625,
+          0.8229000244140625
+        ],
+        [
+          2.4,
+          3.675,
+          1.433699951171875
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_001_12120_0",
+      "label": "X=12.120 м · _1 · Surface_001",
+      "category": "Transverse",
+      "area_m2": 8.23176844414176e-06,
+      "triangles": 14,
+      "bounds_m": [
+        [
+          12.12,
+          2.061282958984375,
+          1.425057861328125
+        ],
+        [
+          12.12,
+          3.08390625,
+          1.5636788330078124
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_001_11000_0",
+      "label": "X=11.000 м · _1 · Surface_001",
+      "category": "Transverse",
+      "area_m2": 1.3960653012976123,
+      "triangles": 335,
+      "bounds_m": [
+        [
+          11.0,
+          2.10639990234375,
+          -0.2935
+        ],
+        [
+          11.0,
+          3.382,
+          1.621699951171875
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_002_12120_0",
+      "label": "X=12.120 м · _1 · Surface_002",
+      "category": "Transverse",
+      "area_m2": 0.7538389799732926,
+      "triangles": 321,
+      "bounds_m": [
+        [
+          12.12,
+          -3.249732421875,
+          -0.1942469482421875
+        ],
+        [
+          12.12,
+          -2.449099853515625,
+          1.5455
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_002_9500_0",
+      "label": "X=9.500 м · _1 · Surface_002",
+      "category": "Transverse",
+      "area_m2": 1.2049191919981634,
+      "triangles": 404,
+      "bounds_m": [
+        [
+          9.5,
+          -3.533,
+          -0.08610001373291015
+        ],
+        [
+          9.5,
+          -1.85899462890625,
+          1.749300048828125
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_002_900_0",
+      "label": "X=0.900 м · _1 · Surface_002",
+      "category": "Transverse",
+      "area_m2": 0.46252182251733537,
+      "triangles": 90,
+      "bounds_m": [
+        [
+          0.9,
+          -3.618,
+          0.36970001220703125
+        ],
+        [
+          0.9,
+          -2.142,
+          0.8290057983398438
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_002_10520_0",
+      "label": "X=10.520 м · _1 · Surface_002",
+      "category": "Transverse",
+      "area_m2": 7.988254062812677e-06,
+      "triangles": 3,
+      "bounds_m": [
+        [
+          10.52,
+          -2.73934130859375,
+          0.5118395690917968
+        ],
+        [
+          10.52,
+          -2.496750244140625,
+          0.8934121704101563
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_002__0_0",
+      "label": "X=-0.000 м · _1 · Surface_002",
+      "category": "Transverse",
+      "area_m2": 0.46433562490276764,
+      "triangles": 72,
+      "bounds_m": [
+        [
+          -4.18647863771604e-17,
+          -3.591,
+          0.015599847793579102
+        ],
+        [
+          3.528562736595207e-17,
+          -2.56499951171875,
+          0.5575206298828125
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_002_2400_0",
+      "label": "X=2.400 м · _1 · Surface_002",
+      "category": "Transverse",
+      "area_m2": 6.743047381014666e-08,
+      "triangles": 12,
+      "bounds_m": [
+        [
+          2.4,
+          -3.675,
+          0.59175
+        ],
+        [
+          2.4,
+          -3.640477783203125,
+          1.433699951171875
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_002_8500_0",
+      "label": "X=8.500 м · _1 · Surface_002",
+      "category": "Transverse",
+      "area_m2": 8.906570531393545e-06,
+      "triangles": 5,
+      "bounds_m": [
+        [
+          8.5,
+          -2.692920654296875,
+          -0.20090361022949219
+        ],
+        [
+          8.5,
+          -2.541385986328125,
+          0.38829302978515623
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_002_4000_0",
+      "label": "X=4.000 м · _1 · Surface_002",
+      "category": "Transverse",
+      "area_m2": 2.6405143606844043e-08,
+      "triangles": 5,
+      "bounds_m": [
+        [
+          4.000000244140625,
+          -3.645,
+          -0.2098000030517578
+        ],
+        [
+          4.000000244140625,
+          -3.51,
+          0.35720001220703124
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_002_11000_0",
+      "label": "X=11.000 м · _1 · Surface_002",
+      "category": "Transverse",
+      "area_m2": 1.396065307695577,
+      "triangles": 343,
+      "bounds_m": [
+        [
+          11.0,
+          -3.382,
+          -0.2935
+        ],
+        [
+          11.0,
+          -2.10639990234375,
+          1.621699951171875
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_003_12120_0",
+      "label": "X=12.120 м · FrontCol · Surface_003",
+      "category": "Transverse",
+      "area_m2": 0.041326196451147615,
+      "triangles": 146,
+      "bounds_m": [
+        [
+          12.12,
+          -2.062358642578125,
+          1.563672607421875
+        ],
+        [
+          12.12,
+          2.062358642578125,
+          1.684873291015625
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_003_12270_0",
+      "label": "X=12.270 м · FrontCol · Surface_003",
+      "category": "Transverse",
+      "area_m2": 0.4121389224928206,
+      "triangles": 219,
+      "bounds_m": [
+        [
+          12.27,
+          -2.062358642578125,
+          1.4742015380859375
+        ],
+        [
+          12.27,
+          2.062358642578125,
+          1.684873291015625
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_003_6417_99",
+      "label": "X=6.418 м · FrontCol · Surface_003",
+      "category": "Transverse",
+      "area_m2": 0.058497563024005404,
+      "triangles": 37,
+      "bounds_m": [
+        [
+          6.41798486328125,
+          1.3335999755859376,
+          1.4369000244140624
+        ],
+        [
+          6.41799658203125,
+          1.8085999755859374,
+          1.9462142333984376
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_003_8500_01",
+      "label": "X=8.500 м · FrontCol · Surface_003",
+      "category": "Transverse",
+      "area_m2": 1.3008692304063967,
+      "triangles": 234,
+      "bounds_m": [
+        [
+          8.5,
+          -2.29652001953125,
+          0.641880126953125
+        ],
+        [
+          8.500013671875,
+          -0.5319599609375,
+          1.8270562744140626
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_003_6418_0",
+      "label": "X=6.418 м · FrontCol · Surface_004",
+      "category": "Transverse",
+      "area_m2": 0.005137441661392218,
+      "triangles": 18,
+      "bounds_m": [
+        [
+          6.4179931640625,
+          1.1955999755859374,
+          1.4369000244140624
+        ],
+        [
+          6.418,
+          1.4585999755859376,
+          1.4629000244140624
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_003_13916_76",
+      "label": "X=13.917 м · FrontCol · Surface_003",
+      "category": "Transverse",
+      "area_m2": 0.0005572026252746588,
+      "triangles": 2,
+      "bounds_m": [
+        [
+          13.916759765625,
+          -0.010470433235168457,
+          1.8354140625
+        ],
+        [
+          13.916759765625,
+          0.011817671775817872,
+          1.860414306640625
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_003_8500_0",
+      "label": "X=8.500 м · FrontCol · Surface_004",
+      "category": "Transverse",
+      "area_m2": 3.4144419316405057,
+      "triangles": 607,
+      "bounds_m": [
+        [
+          8.4999951171875,
+          -2.156722900390625,
+          0.48892544555664064
+        ],
+        [
+          8.5000107421875,
+          2.348945556640625,
+          1.827109130859375
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_003_5237_0",
+      "label": "X=5.237 м · FrontCol · Surface_003",
+      "category": "Transverse",
+      "area_m2": 0.36934324798420537,
+      "triangles": 140,
+      "bounds_m": [
+        [
+          5.237,
+          -2.107440673828125,
+          0.5033061218261718
+        ],
+        [
+          5.237,
+          2.107445068359375,
+          0.8329000244140625
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_003_7000_0",
+      "label": "X=7.000 м · FrontCol · Surface_003",
+      "category": "Transverse",
+      "area_m2": 4.867125002622325,
+      "triangles": 1540,
+      "bounds_m": [
+        [
+          7.0,
+          -2.677,
+          0.5060703430175781
+        ],
+        [
+          7.0,
+          2.107197998046875,
+          1.9439000244140625
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_003_2400_0",
+      "label": "X=2.400 м · FrontCol · Surface_003",
+      "category": "Transverse",
+      "area_m2": 0.3678427424252165,
+      "triangles": 140,
+      "bounds_m": [
+        [
+          2.4,
+          -2.118989013671875,
+          0.5037674255371094
+        ],
+        [
+          2.4,
+          2.118989013671875,
+          0.8329000244140625
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_003_1663_0",
+      "label": "X=1.663 м · FrontCol · Surface_003",
+      "category": "Transverse",
+      "area_m2": 0.37183401064576954,
+      "triangles": 140,
+      "bounds_m": [
+        [
+          1.663,
+          -2.12763330078125,
+          0.49917279052734376
+        ],
+        [
+          1.663,
+          2.12763330078125,
+          0.8329000244140625
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_003_4000_0",
+      "label": "X=4.000 м · FrontCol · Surface_003",
+      "category": "Transverse",
+      "area_m2": 3.6060891153760295,
+      "triangles": 1089,
+      "bounds_m": [
+        [
+          4.000000244140625,
+          -2.107615966796875,
+          0.5013688659667969
+        ],
+        [
+          4.000000244140625,
+          2.107615966796875,
+          2.05789990234375
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_003_900_0",
+      "label": "X=0.900 м · FrontCol · Surface_003",
+      "category": "Transverse",
+      "area_m2": 0.457483914483237,
+      "triangles": 224,
+      "bounds_m": [
+        [
+          0.9,
+          -2.142,
+          0.5071705017089844
+        ],
+        [
+          0.9,
+          2.142,
+          0.8229000244140625
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_004_7000_0",
+      "label": "X=7.000 м · FrontCol · Surface_004",
+      "category": "Transverse",
+      "area_m2": 1.6708529092294837,
+      "triangles": 341,
+      "bounds_m": [
+        [
+          7.0,
+          1.8085999755859374,
+          -0.08610001373291015
+        ],
+        [
+          7.0,
+          3.3291220703125,
+          1.9439000244140625
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_004_8500_0",
+      "label": "X=8.500 м · FrontCol · Surface_005",
+      "category": "Transverse",
+      "area_m2": 1.7417354590633751,
+      "triangles": 390,
+      "bounds_m": [
+        [
+          8.4999951171875,
+          1.808594970703125,
+          -0.46229998779296877
+        ],
+        [
+          8.5000009765625,
+          3.63,
+          1.827109130859375
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_004_12120_0",
+      "label": "X=12.120 м · FrontCol · Surface_004",
+      "category": "Transverse",
+      "area_m2": 0.7590949868848286,
+      "triangles": 299,
+      "bounds_m": [
+        [
+          12.12,
+          2.061282958984375,
+          -0.1942469482421875
+        ],
+        [
+          12.12,
+          3.249732421875,
+          1.573620849609375
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_004_4000_0",
+      "label": "X=4.000 м · FrontCol · Surface_004",
+      "category": "Transverse",
+      "area_m2": 1.7543557532789333,
+      "triangles": 368,
+      "bounds_m": [
+        [
+          4.000000244140625,
+          1.8085999755859374,
+          -0.42979998779296874
+        ],
+        [
+          4.000000244140625,
+          3.699,
+          2.03201806640625
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_004_5237_0",
+      "label": "X=5.237 м · FrontCol · Surface_004",
+      "category": "Transverse",
+      "area_m2": 0.3573282630114604,
+      "triangles": 54,
+      "bounds_m": [
+        [
+          5.237,
+          1.8085999755859374,
+          -0.4530143737792969
+        ],
+        [
+          5.237,
+          3.693211181640625,
+          1.6002904052734375
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_004_900_0",
+      "label": "X=0.900 м · FrontCol · Surface_004",
+      "category": "Transverse",
+      "area_m2": 1.078320417182222,
+      "triangles": 239,
+      "bounds_m": [
+        [
+          0.9,
+          2.12858740234375,
+          -0.12030000305175781
+        ],
+        [
+          0.9,
+          3.618,
+          0.8229000244140625
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_004_3152_0",
+      "label": "X=3.152 м · FrontCol · Surface_004",
+      "category": "Transverse",
+      "area_m2": 0.9205047376241461,
+      "triangles": 169,
+      "bounds_m": [
+        [
+          3.152,
+          2.280707275390625,
+          0.5965509033203125
+        ],
+        [
+          3.152,
+          3.676485107421875,
+          1.80060400390625
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_004_3077_0",
+      "label": "X=3.077 м · FrontCol · Surface_004",
+      "category": "Transverse",
+      "area_m2": 0.04951112783189123,
+      "triangles": 199,
+      "bounds_m": [
+        [
+          3.077,
+          2.109234619140625,
+          1.37860400390625
+        ],
+        [
+          3.077,
+          2.873234619140625,
+          2.11860400390625
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_004_9500_0",
+      "label": "X=9.500 м · FrontCol · Surface_004",
+      "category": "Transverse",
+      "area_m2": 2.2507450066169894,
+      "triangles": 339,
+      "bounds_m": [
+        [
+          9.5,
+          1.85899462890625,
+          -0.41639999389648436
+        ],
+        [
+          9.5,
+          3.533,
+          1.7493092041015625
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_004__0_0",
+      "label": "X=-0.000 м · FrontCol · Surface_004",
+      "category": "Transverse",
+      "area_m2": 0.4196804104354267,
+      "triangles": 96,
+      "bounds_m": [
+        [
+          -7.442039097872808e-18,
+          2.56499951171875,
+          0.015599847793579102
+        ],
+        [
+          1.821496580412148e-17,
+          3.591,
+          0.5008999938964844
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_004_2400_0",
+      "label": "X=2.400 м · FrontCol · Surface_004",
+      "category": "Transverse",
+      "area_m2": 0.04459691313602585,
+      "triangles": 8,
+      "bounds_m": [
+        [
+          2.4,
+          1.8085999755859374,
+          0.3606000061035156
+        ],
+        [
+          2.4,
+          2.525,
+          0.8329000244140625
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_004_1663_0",
+      "label": "X=1.663 м · FrontCol · Surface_004",
+      "category": "Transverse",
+      "area_m2": 0.04481198450647669,
+      "triangles": 8,
+      "bounds_m": [
+        [
+          1.663,
+          1.8085999755859374,
+          0.354039306640625
+        ],
+        [
+          1.663,
+          2.534951416015625,
+          0.8325945434570312
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_004_12270_0",
+      "label": "X=12.270 м · FrontCol · Surface_004",
+      "category": "Transverse",
+      "area_m2": 0.10281993504799905,
+      "triangles": 45,
+      "bounds_m": [
+        [
+          12.27,
+          2.051600341796875,
+          1.336052734375
+        ],
+        [
+          12.27,
+          3.085383056640625,
+          1.57362109375
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_004_5898_0",
+      "label": "X=5.898 м · FrontCol · Surface_004",
+      "category": "Transverse",
+      "area_m2": 1.5954698619489158e-07,
+      "triangles": 51,
+      "bounds_m": [
+        [
+          5.898,
+          2.180707275390625,
+          0.5816013793945313
+        ],
+        [
+          5.898,
+          2.181272705078125,
+          1.9462142333984376
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_004_3245_35",
+      "label": "X=3.245 м · FrontCol · Surface_004",
+      "category": "Transverse",
+      "area_m2": 0.5895893195225892,
+      "triangles": 99,
+      "bounds_m": [
+        [
+          3.2453515625,
+          2.18158251953125,
+          0.7465499267578125
+        ],
+        [
+          3.2453515625,
+          3.655556396484375,
+          1.1465604248046875
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_005_12120_0",
+      "label": "X=12.120 м · FrontCol · Surface_005",
+      "category": "Transverse",
+      "area_m2": 0.00503552561092377,
+      "triangles": 32,
+      "bounds_m": [
+        [
+          12.12,
+          -3.085383056640625,
+          1.434947265625
+        ],
+        [
+          12.12,
+          -2.061281982421875,
+          1.573621826171875
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_005_8500_0",
+      "label": "X=8.500 м · FrontCol · Surface_006",
+      "category": "Transverse",
+      "area_m2": 1.5939015998373476,
+      "triangles": 395,
+      "bounds_m": [
+        [
+          8.5,
+          -3.63,
+          -0.46229998779296877
+        ],
+        [
+          8.500005859375,
+          -1.8087216796875,
+          1.82710986328125
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_005_7000_0",
+      "label": "X=7.000 м · FrontCol · Surface_005",
+      "category": "Transverse",
+      "area_m2": 2.0936898657049623,
+      "triangles": 387,
+      "bounds_m": [
+        [
+          7.0,
+          -3.685,
+          -0.4861000061035156
+        ],
+        [
+          7.0,
+          -1.8085999755859374,
+          1.9439000244140625
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_005_9500_0",
+      "label": "X=9.500 м · FrontCol · Surface_005",
+      "category": "Transverse",
+      "area_m2": 0.19162693991034568,
+      "triangles": 19,
+      "bounds_m": [
+        [
+          9.5,
+          -3.4225869140625,
+          -0.41639999389648436
+        ],
+        [
+          9.5,
+          -2.733402587890625,
+          -0.0855648422241211
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_005_4000_0",
+      "label": "X=4.000 м · FrontCol · Surface_005",
+      "category": "Transverse",
+      "area_m2": 1.7609708046326014,
+      "triangles": 376,
+      "bounds_m": [
+        [
+          4.000000244140625,
+          -3.699,
+          -0.42979998779296874
+        ],
+        [
+          4.000000244140625,
+          -1.8085999755859374,
+          2.05789990234375
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_005_5237_0",
+      "label": "X=5.237 м · FrontCol · Surface_005",
+      "category": "Transverse",
+      "area_m2": 1.0909820832511252,
+      "triangles": 219,
+      "bounds_m": [
+        [
+          5.237,
+          -3.655889892578125,
+          -0.4530143737792969
+        ],
+        [
+          5.237,
+          -1.8085999755859374,
+          0.8329000244140625
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_005_900_0",
+      "label": "X=0.900 м · FrontCol · Surface_005",
+      "category": "Transverse",
+      "area_m2": 0.6142773248666377,
+      "triangles": 129,
+      "bounds_m": [
+        [
+          0.9,
+          -3.618,
+          -0.12030000305175781
+        ],
+        [
+          0.9,
+          -2.12859619140625,
+          0.8229000244140625
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_005_3152_0",
+      "label": "X=3.152 м · FrontCol · Surface_005",
+      "category": "Transverse",
+      "area_m2": 1.6578455101153922,
+      "triangles": 321,
+      "bounds_m": [
+        [
+          3.152,
+          -3.686296142578125,
+          0.5965579833984375
+        ],
+        [
+          3.152,
+          -2.28067236328125,
+          1.8117640380859374
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_005_10520_0",
+      "label": "X=10.520 м · FrontCol · Surface_005",
+      "category": "Transverse",
+      "area_m2": 1.5412476195413842,
+      "triangles": 263,
+      "bounds_m": [
+        [
+          10.52,
+          -3.430293701171875,
+          -0.08611553192138671
+        ],
+        [
+          10.52,
+          -2.0273079833984373,
+          1.662879638671875
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_005_1663_0",
+      "label": "X=1.663 м · FrontCol · Surface_005",
+      "category": "Transverse",
+      "area_m2": 0.04481198450647669,
+      "triangles": 8,
+      "bounds_m": [
+        [
+          1.663,
+          -2.534951416015625,
+          0.354039306640625
+        ],
+        [
+          1.663,
+          -1.8085999755859374,
+          0.8325945434570312
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_005_2400_0",
+      "label": "X=2.400 м · FrontCol · Surface_005",
+      "category": "Transverse",
+      "area_m2": 0.04459691313602586,
+      "triangles": 8,
+      "bounds_m": [
+        [
+          2.4,
+          -2.525,
+          0.3606000061035156
+        ],
+        [
+          2.4,
+          -1.8085999755859374,
+          0.8329000244140625
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_005_12270_0",
+      "label": "X=12.270 м · FrontCol · Surface_005",
+      "category": "Transverse",
+      "area_m2": 0.10317817896775901,
+      "triangles": 72,
+      "bounds_m": [
+        [
+          12.27,
+          -3.085383056640625,
+          1.336052734375
+        ],
+        [
+          12.27,
+          -2.051600341796875,
+          1.57362158203125
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_005_10210_0",
+      "label": "X=10.210 м · FrontCol · Surface_005",
+      "category": "Transverse",
+      "area_m2": 0.24723018035246108,
+      "triangles": 42,
+      "bounds_m": [
+        [
+          10.21,
+          -3.42026611328125,
+          -0.08610491180419921
+        ],
+        [
+          10.21,
+          -2.74036572265625,
+          0.31458544921875
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_005_8500_01",
+      "label": "X=8.500 м · FrontCol · Surface_007",
+      "category": "Transverse",
+      "area_m2": 0.24277892805098866,
+      "triangles": 51,
+      "bounds_m": [
+        [
+          8.500005859375,
+          -2.296530029296875,
+          0.827669677734375
+        ],
+        [
+          8.500013671875,
+          -1.8087216796875,
+          1.82701806640625
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_010_5237_0",
+      "label": "X=5.237 м · _15 · Surface_010",
+      "category": "Transverse",
+      "area_m2": 0.20711784661237892,
+      "triangles": 54,
+      "bounds_m": [
+        [
+          5.237,
+          2.181584228515625,
+          0.5964405517578125
+        ],
+        [
+          5.237,
+          3.562547119140625,
+          0.7465568237304687
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_011_12120_0",
+      "label": "X=12.120 м · _15 · Surface_011",
+      "category": "Transverse",
+      "area_m2": 2.684714314340412e-05,
+      "triangles": 3,
+      "bounds_m": [
+        [
+          12.12,
+          -2.747481201171875,
+          1.4855
+        ],
+        [
+          12.12,
+          -2.449099853515625,
+          1.544873046875
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_015_3252_0",
+      "label": "X=3.252 м · _20 · Surface_015",
+      "category": "Transverse",
+      "area_m2": 0.06093449632318325,
+      "triangles": 13,
+      "bounds_m": [
+        [
+          3.252,
+          -2.1806806640625,
+          1.2592264404296876
+        ],
+        [
+          3.252,
+          -1.8085999755859374,
+          1.8280889892578125
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_021_3252_0",
+      "label": "X=3.252 м · _3 · Surface_021",
+      "category": "Transverse",
+      "area_m2": 0.06071128195581579,
+      "triangles": 15,
+      "bounds_m": [
+        [
+          3.252,
+          1.8085999755859374,
+          1.2604342041015626
+        ],
+        [
+          3.252,
+          2.180707275390625,
+          1.8280889892578125
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Transverse_Surface_030_3152_0",
+      "label": "X=3.152 м · _13 · Surface_030",
+      "category": "Transverse",
+      "area_m2": 1.0783926643526392e-05,
+      "triangles": 14,
+      "bounds_m": [
+        [
+          3.152,
+          3.648158447265625,
+          0.5965509033203125
+        ],
+        [
+          3.152,
+          3.686294677734375,
+          1.481411865234375
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Appendages_Surface_001",
+      "label": "_1 · Surface_009",
+      "category": "Appendages",
+      "area_m2": 2.0090718101001506,
+      "triangles": 1198,
+      "bounds_m": [
+        [
+          0.53626953125,
+          3.028,
+          -1.7534642333984376
+        ],
+        [
+          6.6757158203125,
+          3.41781494140625,
+          -0.06537664031982422
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Appendages_Surface_002",
+      "label": "_1 · Surface_010",
+      "category": "Appendages",
+      "area_m2": 0.4132354440556935,
+      "triangles": 290,
+      "bounds_m": [
+        [
+          0.53626953125,
+          -3.128,
+          -0.7202999877929688
+        ],
+        [
+          0.95,
+          -3.028,
+          -0.03929999923706055
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Appendages_Surface_004",
+      "label": "FrontCol · Surface_036",
+      "category": "Appendages",
+      "area_m2": 0.18317243867231175,
+      "triangles": 49,
+      "bounds_m": [
+        [
+          0.53626953125,
+          3.028,
+          -0.7202999877929688
+        ],
+        [
+          0.95,
+          3.128,
+          -0.06537664031982422
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Appendages_Surface_005",
+      "label": "FrontCol · Surface_037",
+      "category": "Appendages",
+      "area_m2": 0.01177370967586014,
+      "triangles": 16,
+      "bounds_m": [
+        [
+          0.9,
+          -3.128,
+          -0.12030000305175781
+        ],
+        [
+          0.95,
+          -3.028,
+          -0.03929999923706055
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Appendages_Surface_007",
+      "label": "_2 · Surface_007",
+      "category": "Appendages",
+      "area_m2": 2.8648391934110425e-05,
+      "triangles": 1,
+      "bounds_m": [
+        [
+          0.9,
+          3.028,
+          -0.12030000305175781
+        ],
+        [
+          0.9,
+          3.030137939453125,
+          -0.0935
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Appendages_Surface_008",
+      "label": "_2 · Surface_008",
+      "category": "Appendages",
+      "area_m2": 0.01860127169528063,
+      "triangles": 13,
+      "bounds_m": [
+        [
+          0.53626953125,
+          -3.128,
+          -0.12030000305175781
+        ],
+        [
+          0.9,
+          -3.028,
+          -0.03929999923706055
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Appendages_Surface_038",
+      "label": "FrontCol · Surface_038",
+      "category": "Appendages",
+      "area_m2": 2.1180513079238033,
+      "triangles": 994,
+      "bounds_m": [
+        [
+          5.862537109375,
+          -3.431093505859375,
+          -1.752072265625
+        ],
+        [
+          6.706787109375,
+          -3.274231201171875,
+          -0.07860068511962891
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Equipment_Surface_012",
+      "label": "_4 · Surface_012",
+      "category": "Equipment",
+      "area_m2": 0.19535666314558991,
+      "triangles": 54,
+      "bounds_m": [
+        [
+          9.7491005859375,
+          2.577781982421875,
+          1.6857296142578124
+        ],
+        [
+          10.24730078125,
+          3.078,
+          1.72810986328125
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Equipment_Surface_025",
+      "label": "_23 · Surface_028",
+      "category": "Equipment",
+      "area_m2": 0.7344130852633304,
+      "triangles": 372,
+      "bounds_m": [
+        [
+          4.000000244140625,
+          0.565,
+          0.9329000244140625
+        ],
+        [
+          4.000000244140625,
+          1.375,
+          2.75789990234375
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Equipment_Surface_031",
+      "label": "_26 · Surface_031",
+      "category": "Equipment",
+      "area_m2": 0.03003034450686507,
+      "triangles": 116,
+      "bounds_m": [
+        [
+          3.052,
+          2.451234619140625,
+          1.72060400390625
+        ],
+        [
+          3.152,
+          2.531234619140625,
+          1.80060400390625
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Equipment_Surface_032",
+      "label": "_26 · Surface_032",
+      "category": "Equipment",
+      "area_m2": 0.030030341548224863,
+      "triangles": 87,
+      "bounds_m": [
+        [
+          3.052,
+          -2.52743701171875,
+          1.72056396484375
+        ],
+        [
+          3.152,
+          -2.44743701171875,
+          1.80056396484375
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Equipment_Surface_034",
+      "label": "_20 · Surface_035",
+      "category": "Equipment",
+      "area_m2": 0.13543279382304374,
+      "triangles": 1803,
+      "bounds_m": [
+        [
+          3.065,
+          -2.86943701171875,
+          1.37856396484375
+        ],
+        [
+          3.089,
+          -2.10543701171875,
+          2.14256396484375
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Equipment_Surface_035",
+      "label": "FrontCol · Surface_039",
+      "category": "Equipment",
+      "area_m2": 0.03757213116259868,
+      "triangles": 202,
+      "bounds_m": [
+        [
+          3.065,
+          -2.86943701171875,
+          1.37856396484375
+        ],
+        [
+          3.089,
+          -2.10543701171875,
+          1.99311083984375
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Equipment_Surface_036",
+      "label": "FrontCol · Surface_040",
+      "category": "Equipment",
+      "area_m2": 0.027586419754697805,
+      "triangles": 665,
+      "bounds_m": [
+        [
+          3.071,
+          -2.84543701171875,
+          1.40256396484375
+        ],
+        [
+          3.083,
+          -2.12943701171875,
+          2.11856396484375
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Equipment_Surface_037",
+      "label": "_26 · Surface_038",
+      "category": "Equipment",
+      "area_m2": 0.0183341222352535,
+      "triangles": 336,
+      "bounds_m": [
+        [
+          3.071,
+          -2.49343701171875,
+          1.40256396484375
+        ],
+        [
+          3.083,
+          -2.48143701171875,
+          2.11856396484375
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Equipment_Surface_039",
+      "label": "_15 · Surface_039",
+      "category": "Equipment",
+      "area_m2": 0.2412890726082296,
+      "triangles": 98,
+      "bounds_m": [
+        [
+          6.62910791015625,
+          -3.619045166015625,
+          1.576316162109375
+        ],
+        [
+          7.00037060546875,
+          -3.50324462890625,
+          2.0047432861328125
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Equipment_Surface_040",
+      "label": "_2 · Surface_040",
+      "category": "Equipment",
+      "area_m2": 0.044132024321481576,
+      "triangles": 6,
+      "bounds_m": [
+        [
+          6.62910791015625,
+          -3.562716064453125,
+          1.576563720703125
+        ],
+        [
+          6.94498681640625,
+          -3.540635498046875,
+          1.75855908203125
+        ]
+      ]
+    },
+    {
+      "name": "Fit_Equipment_Surface_041",
+      "label": "FrontCol · Surface_041",
+      "category": "Equipment",
+      "area_m2": 0.03200500373100739,
+      "triangles": 43,
+      "bounds_m": [
+        [
+          6.62910791015625,
+          -3.57900927734375,
+          1.576316162109375
+        ],
+        [
+          7.00037060546875,
+          -3.50324462890625,
+          1.9596878662109376
+        ]
+      ]
+    }
+  ],
+  "input_only": true
+}

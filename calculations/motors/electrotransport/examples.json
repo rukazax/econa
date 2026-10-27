@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-11",
+  "status": "illustrative_scenarios_not_selected_hardware",
+  "source_reference": "research/motors/goldenmotor-hpm/reference.yaml",
+  "assumptions": {
+    "dc_voltage_V": 72,
+    "dc_to_shaft_efficiency": 0.9,
+    "include_auxiliaries": false,
+    "cell_nominal_V": 3.2,
+    "cell_charge_limit_V": 3.65,
+    "cell_values_are_scenario_assumptions": true
+  },
+  "power_scenarios": [
+    {
+      "shaft_power_W": 5000,
+      "input_dc_power_W": 5555.555555555556,
+      "dc_current_A": 77.1604938271605,
+      "combined_motor_inverter_loss_W": 555.5555555555557
+    },
+    {
+      "shaft_power_W": 10000,
+      "input_dc_power_W": 11111.111111111111,
+      "dc_current_A": 154.320987654321,
+      "combined_motor_inverter_loss_W": 1111.1111111111113
+    },
+    {
+      "shaft_power_W": 20000,
+      "input_dc_power_W": 22222.222222222223,
+      "dc_current_A": 308.641975308642,
+      "combined_motor_inverter_loss_W": 2222.2222222222226
+    }
+  ],
+  "two_motor_20kW_scenario": {
+    "shaft_power_each_W": 20000,
+    "total_current_at_72V_A": 617.283950617284,
+    "total_current_at_60V_A": 740.7407407407408
+  },
+  "20kW_efficiency_sensitivity": [
+    {
+      "eta": 0.88,
+      "dc_current_A": 315.65656565656565,
+      "loss_W": 2727.272727272728
+    },
+    {
+      "eta": 0.9,
+      "dc_current_A": 308.641975308642,
+      "loss_W": 2222.2222222222226
+    },
+    {
+      "eta": 0.94,
+      "dc_current_A": 295.5082742316785,
+      "loss_W": 1276.5957446808534
+    }
+  ],
+  "20kW_3200rpm": {
+    "torque_Nm": 59.68310365946075,
+    "pole_pairs": 4,
+    "electrical_rpm": 12800,
+    "electrical_frequency_Hz": 213.33333333333334
+  },
+  "winding_star_examples": {
+    "line_to_line_R_ohm": 0.0032,
+    "resistance_measurement_temperature_unknown": true,
+    "formula": "Pcu_W = 1.5 * R_line_line_ohm * I_phase_rms_A**2",
+    "validity": "Balanced three-phase star, identical winding resistance; not DC/peak current",
+    "points": [
+      {
+        "phase_rms_A": 200,
+        "copper_loss_W": 192.00000000000003
+      },
+      {
+        "phase_rms_A": 500,
+        "copper_loss_W": 1200.0000000000002
+      }
+    ]
+  },
+  "battery_scenarios": [
+    {
+      "series_cells": 23,
+      "nominal_V": 73.60000000000001,
+      "charge_maximum_V": 83.95,
+      "selected": false,
+      "voltage_spikes_not_included": true
+    },
+    {
+      "series_cells": 24,
+      "nominal_V": 76.80000000000001,
+      "charge_maximum_V": 87.6,
+      "selected": false,
+      "voltage_spikes_not_included": true
+    }
+  ],
+  "formula_audit": {
+    "rotor_surface_cm2": 76.19932981282044,
+    "note": "Audit of ET-60421 message 1756429; not ECONA motor dimensions"
+  }
+}

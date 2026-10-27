@@ -1,0 +1,27 @@
+{
+  "method": "Exact original CAD facets plus ruled triangulated top strips and planar aft cap; no original facet moved or removed",
+  "coordinate_units": "mm; original Z not waterline",
+  "skin_faces": 19447,
+  "skin_boundary_edges": 319,
+  "top_triangles": 265,
+  "aft_outline_vertices": 54,
+  "aft_mesh_triangles": 52,
+  "watertight": true,
+  "consistent_winding": true,
+  "euler_number": 2,
+  "volume_m3": 25.21681889078374,
+  "centroid_original_m": [
+    6.158630422622779,
+    2.990785210373685,
+    0.7099339940235505
+  ],
+  "area_closed_m2": 80.21929525204726,
+  "top_closure_min_original_z_m": 0.439900419,
+  "keel_original_z_m": -0.48610000600000003,
+  "limitations": [
+    "Artificial top closure is NOT the actual deck or an approved flood boundary",
+    "Upright hydrostatic cuts must stay below the lowest top closure; heel requires explicit closure-intersection check",
+    "Fully enclosed volume is NOT payload or permissible displacement",
+    "The transom cap is a geometric closure, not a designed watertight bulkhead"
+  ]
+}

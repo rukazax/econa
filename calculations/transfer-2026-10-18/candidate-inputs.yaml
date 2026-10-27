@@ -1,0 +1,103 @@
+date: '2026-10-18'
+status: accounted_for_research_not_final_configuration
+source_manifest: research/imports/transfer-2026-10-18/import-manifest.json
+reference: docs/36_transfer_20261018.md
+mechanical_material_grade_properties: null
+incoming_panel_variants:
+- id: bottom5
+  name: 'Низ: ФСФ4+4 / пена25 / сосна5'
+  FSF_total_mm: 8
+  pine_total_mm: 5
+  core_mm: 25
+  outer_T11_layers: 3
+  selected: false
+- id: bottom6
+  name: 'Низ: ФСФ4+4 / пена25 / сосна6'
+  FSF_total_mm: 8
+  pine_total_mm: 6
+  core_mm: 25
+  outer_T11_layers: 3
+  selected: false
+- id: upper
+  name: 'Борт: ФСФ4+4 / пена25 / сосна4'
+  FSF_total_mm: 8
+  pine_total_mm: 4
+  core_mm: 25
+  outer_T11_layers: 2
+  selected: false
+- id: deck
+  name: 'Палуба/крыша: ФСФ4 / пена25 / ФСФ4'
+  FSF_total_mm: 8
+  pine_total_mm: 0
+  core_mm: 25
+  outer_T11_layers: 2
+  selected: false
+- id: bulkhead
+  name: 'Переборка: ФСФ6,5 / пена10 / ФСФ6,5'
+  FSF_total_mm: 13
+  pine_total_mm: 0
+  core_mm: 10
+  outer_T11_layers: 0
+  selected: false
+- id: pine4_below
+  name: Сосна3×4, below
+  FSF_total_mm: 0
+  pine_total_mm: 12
+  core_mm: 0
+  outer_T11_layers: 3
+  selected: false
+- id: pine4_above
+  name: Сосна3×4, above
+  FSF_total_mm: 0
+  pine_total_mm: 12
+  core_mm: 0
+  outer_T11_layers: 2
+  selected: false
+- id: pine5_below
+  name: Сосна3×5, below
+  FSF_total_mm: 0
+  pine_total_mm: 15
+  core_mm: 0
+  outer_T11_layers: 3
+  selected: false
+- id: pine5_above
+  name: Сосна3×5, above
+  FSF_total_mm: 0
+  pine_total_mm: 15
+  core_mm: 0
+  outer_T11_layers: 2
+  selected: false
+- id: pine8_below
+  name: Сосна3×8, below
+  FSF_total_mm: 0
+  pine_total_mm: 24
+  core_mm: 0
+  outer_T11_layers: 3
+  selected: false
+- id: pine8_above
+  name: Сосна3×8, above
+  FSF_total_mm: 0
+  pine_total_mm: 24
+  core_mm: 0
+  outer_T11_layers: 2
+  selected: false
+structural_options:
+  birch_FSF: true
+  local_solid_inserts_at_bulkheads: true
+  oak_laminated_keel: true
+  pine_stringers: true
+  wooden_faces_inner_epoxy_only: true
+  members_and_connections_sized: false
+energy_option:
+  battery_kWh: 80
+  battery_assumed_kg: 570
+  diesel_generators:
+    count: 2
+    electric_kW_each: 8
+    assumed_kg_each: 200
+  fuel_mass_kg: 400
+  water_mass_kg: 600
+  motors_assumed_total_kg: 120
+  PV_assumed_area_m2: 28
+  accepted_as_baseline: false
+load_and_strength_verification: null

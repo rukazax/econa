@@ -1,0 +1,53 @@
+date: '2026-10-18'
+status: input_template_no_selected_hardware
+reference: research/marine-opensource/application-map.yaml
+nominal_motor_voltage_V: 72
+battery:
+  series_cells: null
+  Vmin_Vmax: null
+  usable_capacity_kWh: null
+  charge_discharge_limit_vs_SOC_temperature: null
+  installed_mass_kg: null
+DC_bus:
+  topology_shared_or_split: null
+  capacitance_F: null
+  precharge_ohm_and_energy_J: null
+  fault_current_A: null
+  surge_and_regen_limits: null
+propulsion:
+  continuous_shaft_power_each_W: null
+  motor_inverter_efficiency_map: null
+  reduction_efficiency_map: null
+  shaft_propeller_efficiency_and_interaction: null
+  cooling_power_W: null
+sources:
+  PV_hourly_W: null
+  MPPT_efficiency_map: null
+  generator_optional_efficiency_and_fuel_map: null
+loads:
+  hotel_hourly_W: null
+  AI_and_sensors_W: null
+  kite_launch_and_control_W: null
+  priority_backup_Wh: null
+  VCU_EMS_control_and_cooling_W: null
+  instrument_nodes_gateways_displays_W: null
+protocol:
+  CAN_ids_units_and_endianness: null
+  message_period_timeout_ms: null
+  command_authority_and_fallback_by_mode: null
+validation:
+  benchmarks: null
+  energy_residual_tolerance: null
+  SOC_step_convergence: null
+  fault_scenarios: null
+  signed_battery_current_and_SOC_units: null
+software:
+  FEEMS_candidate_version_from_source: 0.18.1
+  installed_and_validated: false
+  MarPowSim_Octave_compatibility: null
+VCU_EMS_contract: calculations/control/vcu-ems/design-contract.yaml
+VCU_EMS_fmea: calculations/control/vcu-ems/fmea-candidates.csv
+installed_equipment:
+  BOM_mass_and_CG: null
+  replace_existing_budget_allowance_without_double_counting: true
+instrumentation_input_contract: calculations/navigation/open-boat-projects/data-contract.yaml

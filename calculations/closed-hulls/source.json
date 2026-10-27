@@ -1,0 +1,27 @@
+{
+  "document": "ECONA_ECONA",
+  "source_file": "project/models/ECONA/ECONA_ECONA.FCStd",
+  "disk_sha256": "7ae0c6e91c30dc92f1f46d84660eb2e1f431d6f56efa7243a7c15a9a608791ef",
+  "snapshot_sha256": "2ef14b384045325934dec10ba5c04bd757f55874b9334839a62af617f1a77a1b",
+  "touched": false,
+  "axis": "X forward; Y port; Z up; original coordinates mm; original Z is not waterline",
+  "objects": 137,
+  "skins": [
+    {
+      "name": "PortSkin",
+      "faces": 19447,
+      "triangles": 19442,
+      "points": 9884,
+      "area_m2": 58.006598524161134,
+      "brep_sha256": "8b994ca1a91eb98b6558e5e8c065b727e463e77b376c28c9117f0ba9bf31a087"
+    },
+    {
+      "name": "StarboardSkin",
+      "faces": 19447,
+      "triangles": 19442,
+      "points": 9884,
+      "area_m2": 58.006598524161106,
+      "brep_sha256": "565484fd12b741e49e37d60882071e06d9067429f5e9f8304e2a00e1bff7907b"
+    }
+  ]
+}

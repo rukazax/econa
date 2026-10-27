@@ -1,0 +1,97 @@
+{
+  "scope": "Three upright test cuts of the actual closed hull envelopes; no design displacement or Lpp approved",
+  "randomized_boolean_retry": false,
+  "volume_method": "Patched Ship: exact convex-planar facet clipping",
+  "single_hull_test_values_doubled_for_symmetric_pair": true,
+  "tests": [
+    {
+      "test_draft_m": 0.4,
+      "ship": {
+        "total_displacement_at_1025_kg_m3": 4561.566243071184,
+        "LCB_from_mid_LOA_m": -0.5260710845353238,
+        "KB_m": 0.24897755993871543,
+        "waterplane_area_m2_volume_derivative": 17.995449665468307
+      },
+      "independent": {
+        "test_draft_m": 0.4,
+        "total_volume_m3": 4.4503085298254526,
+        "total_displacement_at_1025_kg_m3": 4561.566243071089,
+        "LCB_from_mid_LOA_m": -0.5260710845353035,
+        "KB_m": 0.2489775599387129,
+        "waterplane_area_m2_volume_derivative": 17.995446252028202
+      },
+      "relative_errors": {
+        "total_displacement_at_1025_kg_m3": 2.0735739424602378e-14,
+        "LCB_from_mid_LOA_m": 3.86204107161433e-14,
+        "KB_m": 1.0144518171211732e-14,
+        "waterplane_area_m2_volume_derivative": 1.8968354865936662e-07
+      },
+      "waterplane_faces": 1,
+      "elapsed_seconds": 14.4383225440979,
+      "passed": true
+    },
+    {
+      "test_draft_m": 0.6,
+      "ship": {
+        "total_displacement_at_1025_kg_m3": 8671.439512508417,
+        "LCB_from_mid_LOA_m": -0.7806609128598775,
+        "KB_m": 0.3693480572121596,
+        "waterplane_area_m2_volume_derivative": 21.51782207356557
+      },
+      "independent": {
+        "test_draft_m": 0.6,
+        "total_volume_m3": 8.45994098781254,
+        "total_displacement_at_1025_kg_m3": 8671.439512507854,
+        "LCB_from_mid_LOA_m": -0.7806609128598191,
+        "KB_m": 0.36934805721215114,
+        "waterplane_area_m2_volume_derivative": 21.517822074015314
+      },
+      "relative_errors": {
+        "total_displacement_at_1025_kg_m3": 6.502803995644025e-14,
+        "LCB_from_mid_LOA_m": 7.480550150942364e-14,
+        "KB_m": 2.284483381566735e-14,
+        "waterplane_area_m2_volume_derivative": 2.090105255446927e-11
+      },
+      "waterplane_faces": 1,
+      "elapsed_seconds": 16.496230602264404,
+      "passed": true
+    },
+    {
+      "test_draft_m": 0.8,
+      "ship": {
+        "total_displacement_at_1025_kg_m3": 13309.599494574755,
+        "LCB_from_mid_LOA_m": -0.918094437396596,
+        "KB_m": 0.48514164572042423,
+        "waterplane_area_m2_volume_derivative": 23.727923421517303
+      },
+      "independent": {
+        "test_draft_m": 0.8,
+        "total_volume_m3": 12.984975116658465,
+        "total_displacement_at_1025_kg_m3": 13309.599494574926,
+        "LCB_from_mid_LOA_m": -0.9180944373966309,
+        "KB_m": 0.485141645720431,
+        "waterplane_area_m2_volume_derivative": 23.72792206060126
+      },
+      "relative_errors": {
+        "total_displacement_at_1025_kg_m3": 1.2846742984490633e-14,
+        "LCB_from_mid_LOA_m": 3.797104257823689e-14,
+        "KB_m": 1.3959552864517661e-14,
+        "waterplane_area_m2_volume_derivative": 5.7355045303591085e-08
+      },
+      "waterplane_faces": 1,
+      "elapsed_seconds": 17.87093424797058,
+      "passed": true
+    }
+  ],
+  "combined_pair": {
+    "test_draft_m": 0.6,
+    "displacement_kg": 8671.439512508408,
+    "KB_m": 0.3693480572121599,
+    "LCB_m": -0.7806609128598789,
+    "TCB_m": 1.8469395971565884e-15,
+    "waterplane_faces": 2,
+    "waterplane_area_m2": 21.517822073565586,
+    "passed": true
+  },
+  "passed": true
+}

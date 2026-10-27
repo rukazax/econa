@@ -1,0 +1,40 @@
+# Unknown physical inputs are deliberately null; not a computed vessel model.
+schema_version: 1
+model: models/ECONA/ECONA_ECONA.FCStd
+model_sha256_at_review: 7ae0c6e91c30dc92f1f46d84660eb2e1f431d6f56efa7243a7c15a9a608791ef
+calculation_geometry:
+  watertight_hull_solids: null
+  x_midship_original_mm: null
+  z_baseline_original_mm: null
+  length_between_perpendiculars_m: null
+  length_waterline_m: null
+  design_draft_m: null
+environment:
+  water_density_kg_m3: 1025
+  gravity_m_s2: 9.81
+  note: nominal seawater; confirm for the selected case
+weight_ledger:
+  lightship_mass_kg: null
+  structural_materials: null
+  shell_thicknesses: null
+  masses_positions_and_inertias: null
+  tanks_volumes_densities_and_height_fractions: null
+cases:
+  - lightship
+  - four_people
+  - eight_people
+  - full_stores
+  - minimum_stores
+  - partially_filled_tanks
+  - adverse_load_positions
+kite:
+  attachment_position_m: null
+  tension_vector_N: null
+  gust_load_case: null
+seakeeping:
+  centre_of_mass_m: null
+  rotation_centre_m: null
+  mass_matrix_6x6: null
+  hydrostatic_stiffness_6x6: null
+  forward_speed_m_s: null
+  mesh_convergence: null

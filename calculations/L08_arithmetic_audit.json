@@ -1,0 +1,20 @@
+{
+  "scope": "Arithmetic of the formulas printed in L08 only; rule coefficients are not independently validated",
+  "source": "library/user/L08.pdf",
+  "M1_kNm": -70.485,
+  "M2_kNm": -75.0615,
+  "M3_as_substituted_kNm": 19.571840621666663,
+  "M3_using_defined_m1_m6_kNm": 24.054518487999996,
+  "Tprime_with_T_kN": 22.342520199999996,
+  "Tprime_missing_T_kN": 31.917885999999996,
+  "Ttriple_prime_multiplier_with_T_kN": 29.989959999999996,
+  "Ttriple_prime_multiplier_printed_without_T_kN": 42.8428,
+  "m2_correction_coefficient": 0.0035375925,
+  "m3_correction_coefficient": 0.0038808315000000006,
+  "m4_correction_coefficient": 0.0060602977500000006,
+  "m2prime_factor_at_phi15": 0.9997630262366186,
+  "m2prime_printed_factor_at_phi15": 4.6047068719288426e-05,
+  "m3prime_factor_at_phi15": 0.9997400335834035,
+  "m3prime_printed_factor_at_phi15": 0.06671934891534954,
+  "page7_sigma_MPa": 7.9889220281210065
+}

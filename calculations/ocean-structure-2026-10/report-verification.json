@@ -1,0 +1,184 @@
+{
+  "date": "2026-10-18",
+  "pages": 28,
+  "bookmarks": 27,
+  "bytes": 2123994,
+  "sha256": "d73f4767435b8b5e5047a985edec67151ea7e70e68ad1fbd107976a29adc63a9",
+  "text_within_page_bounds": true,
+  "replacement_characters": false,
+  "page_details": [
+    {
+      "page": 1,
+      "characters": 730,
+      "image_count": 1
+    },
+    {
+      "page": 2,
+      "characters": 1225,
+      "image_count": 0
+    },
+    {
+      "page": 3,
+      "characters": 1413,
+      "image_count": 0
+    },
+    {
+      "page": 4,
+      "characters": 916,
+      "image_count": 1
+    },
+    {
+      "page": 5,
+      "characters": 746,
+      "image_count": 1
+    },
+    {
+      "page": 6,
+      "characters": 1107,
+      "image_count": 0
+    },
+    {
+      "page": 7,
+      "characters": 651,
+      "image_count": 1
+    },
+    {
+      "page": 8,
+      "characters": 1317,
+      "image_count": 0
+    },
+    {
+      "page": 9,
+      "characters": 895,
+      "image_count": 1
+    },
+    {
+      "page": 10,
+      "characters": 1340,
+      "image_count": 0
+    },
+    {
+      "page": 11,
+      "characters": 617,
+      "image_count": 1
+    },
+    {
+      "page": 12,
+      "characters": 1313,
+      "image_count": 0
+    },
+    {
+      "page": 13,
+      "characters": 474,
+      "image_count": 2
+    },
+    {
+      "page": 14,
+      "characters": 827,
+      "image_count": 1
+    },
+    {
+      "page": 15,
+      "characters": 1151,
+      "image_count": 0
+    },
+    {
+      "page": 16,
+      "characters": 978,
+      "image_count": 1
+    },
+    {
+      "page": 17,
+      "characters": 1378,
+      "image_count": 0
+    },
+    {
+      "page": 18,
+      "characters": 912,
+      "image_count": 0
+    },
+    {
+      "page": 19,
+      "characters": 684,
+      "image_count": 1
+    },
+    {
+      "page": 20,
+      "characters": 571,
+      "image_count": 1
+    },
+    {
+      "page": 21,
+      "characters": 1282,
+      "image_count": 0
+    },
+    {
+      "page": 22,
+      "characters": 1539,
+      "image_count": 0
+    },
+    {
+      "page": 23,
+      "characters": 1321,
+      "image_count": 1
+    },
+    {
+      "page": 24,
+      "characters": 1570,
+      "image_count": 0
+    },
+    {
+      "page": 25,
+      "characters": 1632,
+      "image_count": 0
+    },
+    {
+      "page": 26,
+      "characters": 1349,
+      "image_count": 0
+    },
+    {
+      "page": 27,
+      "characters": 1224,
+      "image_count": 0
+    },
+    {
+      "page": 28,
+      "characters": 1428,
+      "image_count": 0
+    }
+  ],
+  "rendered_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+  ],
+  "visual_review": "all28pages via contact sheets; detail pages12,16,22,23; final modified pages16,22,28 checked",
+  "numerical_checks": "verification.json PASS",
+  "scope": "preliminary comparisons; full connected hull FEM, actual masses and physical joints not confirmed"
+}

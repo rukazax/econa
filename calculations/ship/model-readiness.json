@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-10",
+  "model": "project/models/ECONA/ECONA_ECONA.FCStd",
+  "sha256": "7ae0c6e91c30dc92f1f46d84660eb2e1f431d6f56efa7243a7c15a9a608791ef",
+  "objects": 137,
+  "hulls": [
+    {
+      "name": "PortSkin",
+      "type": "Shell",
+      "valid": true,
+      "closed": false,
+      "solids": 0,
+      "faces": 19447,
+      "area_m2": 58.006598524161134
+    },
+    {
+      "name": "StarboardSkin",
+      "type": "Shell",
+      "valid": true,
+      "closed": false,
+      "solids": 0,
+      "faces": 19447,
+      "area_m2": 58.006598524161106
+    }
+  ],
+  "status": "NOT_READY_FOR_VESSEL_HYDROSTATICS",
+  "blockers": [
+    "Hull skins are open shells, not watertight displacement solids",
+    "Design waterline, baseline and length between perpendiculars not assigned",
+    "Structural thicknesses/materials and mass/CG/inertia ledger not assigned"
+  ],
+  "allowed_now": [
+    "geometric dimensions",
+    "sections and lines of existing surfaces",
+    "software verification on separate reference bodies"
+  ],
+  "calculation_copy": {
+    "model": "models/ECONA/ECONA_ECONA_CalculationHulls.FCStd",
+    "sha256": "2017ed784828a44002d722219b461f099f2ce543aaeb2514e268bc50aad25202",
+    "status": "CLOSED_GEOMETRY_UPRIGHT_HYDRO_TESTS_PASSED",
+    "closed_positive_valid_solids": 2,
+    "top_closure_min_z_m": 0.926000425,
+    "design_waterline_assigned": false,
+    "mass_CG_Lpp_not_assigned": true,
+    "verification": "calculations/closed-hulls/ship-verification.json"
+  }
+}

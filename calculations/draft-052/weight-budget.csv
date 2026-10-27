@@ -1,0 +1,11 @@
+item,target_kg,status
+"Корпус, мост и надстройка",2500,allocation_not_measured
+Интерьер,300,allocation_not_measured
+Судовые системы,350,allocation_not_measured
+Кайт и запуск,220,allocation_not_measured
+Установленные моторы и движители,200,allocation_not_measured
+Распределение энергии,130,allocation_not_measured
+PV с креплениями,197.43627958915454,allocation_not_measured
+АКБ 30 кВтч: прежние условные 115 Втч/кг,260.8695652173913,allocation_not_measured
+Локальный ИИ и дополнительные датчики: резерв,30,allocation_not_measured
+Резерв массы сухой части,628.2458767209819,15_percent_retained

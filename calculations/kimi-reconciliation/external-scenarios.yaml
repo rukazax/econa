@@ -1,0 +1,43 @@
+date: '2026-10-16'
+status: external_kimi_options_not_user_approved_configuration
+source: research/imports/kimi-2026-10-15/extracted
+battery:
+  series_cells: 24
+  parallel_total: 2
+  banks: 2x24S1P
+  cell_Ah_assumed: 314
+  cell_nominal_V_assumed: 3.2
+  energy_kWh: 48.2304
+  nominal_V: 76.8
+  charge_cell_V_assumed: 3.65
+  charge_pack_V_scenario: 87.6
+  cell_batch_test: null
+  mass_installed_kg: null
+  continuous_DC_A: null
+  selected: false
+propulsion:
+  motor_reference: HPM-20K72V
+  motor_power_continuous_kW: null
+  propeller_D_m: 0.5
+  pitch_m: 0.45
+  blades: 3
+  folding_model_confirmed: false
+  gear_ratio_candidate: 3.5
+  gear_efficiency_assumed: 0.97
+  selected: false
+kite:
+  area_m2_candidate: 80
+  reduced_area_m2_candidate: 60
+  algebraic_cap_kN:
+  - 12
+  - 8
+  cap_is_structural_approval: false
+  controller_settling_physical_s: null
+  selected: false
+diesel_option:
+  generator_kW_candidate: 15
+  fuel_L: 400
+  fuel_density_kg_L_assumed: 0.84
+  fuel_mass_kg_scenario: 336
+  baseline: false
+  user_approval_in_current_context: false

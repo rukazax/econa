@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-18",
+  "status": "PASS",
+  "import_file_hashes_unchanged": 5,
+  "geometry_duplicates_confirmed": 2,
+  "canonical_CAD_hashes_unchanged": {
+    "models/ECONA/ECONA_ECONA.FCStd": "7ae0c6e91c30dc92f1f46d84660eb2e1f431d6f56efa7243a7c15a9a608791ef",
+    "models/ECONA/ECONA_ECONA_CalculationHulls.FCStd": "2017ed784828a44002d722219b461f099f2ce543aaeb2514e268bc50aad25202"
+  },
+  "current_user_requirements_preserved": true,
+  "mass_only_scenarios": 11,
+  "new_strength_claims": false,
+  "sources": 239,
+  "new_source_text_indexed": {
+    "TR18R": 1,
+    "TR18V": 1,
+    "TR18M": 1
+  },
+  "mkdocs_strict": "PASS",
+  "library_verification": {
+    "sources": 239,
+    "public_pdf": 43,
+    "user_pdf": 40,
+    "user_pdf_pages": 2190,
+    "indexed_pages_and_notes": 4580,
+    "links": "passed",
+    "pdf_checksums": "passed",
+    "extracted_text": "passed",
+    "url": "http://127.0.0.1:8777/index.html",
+    "fts_search": {
+      "L02": {
+        "query": "клиренс",
+        "matched_pages": 1
+      },
+      "L13": {
+        "query": "остойчивость",
+        "matched_pages": 15
+      },
+      "L19": {
+        "query": "пластмассы",
+        "matched_pages": 48
+      },
+      "L08": {
+        "query": "момент",
+        "matched_pages": 4
+      },
+      "L22": {
+        "query": "\"flat panel\"",
+        "matched_pages": 1
+      }
+    },
+    "web_card_index": "passed"
+  },
+  "review_sha256": "71e52a58c5edd94555f7589f38053a429340aae55996d22f031bef6923cc8774",
+  "script_sha256": "63dda90aa4ca326fb75d1e451ca1b7d7052b91e19c5c02a47bee183d6ae19fd5",
+  "candidate_inputs_sha256": "d797c1e265c3f7a6a3fe3add45ec4857b219e2dd46ed7b365a1d36e33001bebd",
+  "PDF_updated": false
+}

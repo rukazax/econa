@@ -1,0 +1,15 @@
+{
+  "weld_neighbour_radius_mm": 0.01,
+  "maximum_vertex_displacement_mm": 0.0048830902357708175,
+  "removed_collapsed_facets": 624,
+  "triangles": 19140,
+  "volume_m3": 25.216818888781116,
+  "relative_volume_change": 7.941612607241339e-11,
+  "euler_number": 2,
+  "watertight": true,
+  "winding_consistent": true,
+  "method": "Only near-coincident vertices clustered and averaged; collapsed triangles removed; no remeshing or smoothing",
+  "remaining_skin_triangles": 18827,
+  "remaining_top_triangles": 261,
+  "remaining_aft_triangles": 52
+}

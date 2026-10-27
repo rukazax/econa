@@ -1,0 +1,11 @@
+{
+  "area_m2": 30,
+  "efficiency": 0.22,
+  "irradiation_kwh_m2_day": 4,
+  "system_factor": 0.75,
+  "hotel_kwh_day": 6,
+  "motor_kw": 10,
+  "battery_kwh": 20,
+  "soc_span": 0.8,
+  "discharge_efficiency": 0.95
+}

@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "source_assembly_unchanged": true,
+  "output_sha256": "2017ed784828a44002d722219b461f099f2ce543aaeb2514e268bc50aad25202",
+  "model_bytes": 6967041,
+  "two_closed_valid_positive_solids": true,
+  "all_surfaces": "Plane",
+  "three_upright_test_drafts_m": [
+    0.4,
+    0.6,
+    0.8
+  ],
+  "combined_pair_at_0_6m": "passed, two separate valid waterplane faces",
+  "independent_integration": "passed",
+  "standard_two_box_regression": "passed",
+  "source_and_site_copy_checksums": "passed",
+  "global_BOP_self_intersection_scan": "not performed",
+  "limits": "Conditional top closure; actual design draft/mass/CG/Lpp unassigned; large heel/trim not verified",
+  "saved_fcstd_reopened_and_verified": true
+}

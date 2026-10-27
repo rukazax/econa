@@ -1,0 +1,218 @@
+revision: 2
+date: 2026-10-10
+status: conceptual_scenarios_not_design_validation
+constants:
+  water_density_kg_m3: 1025
+  air_density_kg_m3: 1.225
+  gravity_m_s2: 9.81
+  seawater_kinematic_viscosity_m2_s: 1.19e-06
+  knot_m_s: 0.5144444444444445
+geometry:
+  model: models/ECONA/ECONA_ECONA.FCStd
+  source_sha256: 7ae0c6e91c30dc92f1f46d84660eb2e1f431d6f56efa7243a7c15a9a608791ef
+  roof_detection: union of Superstructure triangles with abs(normal_z)>0.85 and centroid_z>2.2
+    m
+  waterline_length_for_resistance_m: 12.8
+  waterline_length_sensitivity_m:
+  - 11.5
+  - 13.2
+  resistance_wetted_area_reference_m2: 45
+  wetted_area_is_cad_measurement: false
+  calculation_model: models/ECONA/ECONA_ECONA_CalculationHulls.FCStd
+  calculation_sha256: 2017ed784828a44002d722219b461f099f2ce543aaeb2514e268bc50aad25202
+hydro_surrogate:
+  shape: two closed ellipsoids, not reconstructed ECONA hulls
+  length_m: 13.6
+  maximum_width_each_m: 1.3
+  total_height_m: 2.2
+  hull_center_spacing_m: 6.1
+  zero_z: surrogate keel, not original CAD datum
+resistance_scenarios:
+- name: low
+  label: Низкое сопротивление
+  wetted_area_m2: 35
+  total_to_friction_ratio: 1.6
+  total_dc_to_effective_efficiency: 0.62
+- name: central
+  label: Опорный сценарий
+  wetted_area_m2: 45
+  total_to_friction_ratio: 2.5
+  total_dc_to_effective_efficiency: 0.55
+- name: high
+  label: Высокое сопротивление
+  wetted_area_m2: 55
+  total_to_friction_ratio: 4.0
+  total_dc_to_effective_efficiency: 0.42
+pv:
+  efficiency_stc: 0.22
+  usable_roof_fractions:
+  - 0.7
+  - 0.8
+  - 0.85
+  daily_irradiation_kwh_m2:
+  - 0.8
+  - 2
+  - 4
+  - 6
+  total_performance_ratio: 0.75
+  reference_cell_temperature_C: 45
+  power_temperature_coefficient_K_inv: -0.0035
+  synthetic_weather_irradiation_sequence:
+  - 4
+  - 4
+  - 0.8
+  - 0.8
+  - 0.8
+  - 4
+  - 4
+  real_route_weather: null
+battery:
+  nominal_capacities_kwh:
+  - 20
+  - 40
+  - 60
+  minimum_soc: 0.1
+  maximum_soc: 0.9
+  discharge_efficiency: 0.96
+  charge_efficiency: 0.96
+  protected_bus_energy_kwh: 8
+  protected_energy_reason: 4.8 kWh for 48h critical 100W load plus 3.2 kWh maneuver
+    budget; unapproved target
+  whole_bank_energy_density_wh_kg: 115
+  whole_bank_energy_density_range_wh_kg:
+  - 100
+  - 140
+hotel:
+  daily_scenarios_kwh:
+  - 4
+  - 6
+  - 10
+  central_daily_kwh: 5.56
+  critical_average_W: 100
+  daily_budget_kwh:
+    navigation_communications: 0.8
+    hull_autopilot: 0.5
+    kite_control_and_winches: 0.7
+    refrigeration: 1.2
+    water_pumps: 0.2
+    lighting: 0.2
+    computers_and_devices: 0.6
+    watermaker: 0.36
+    limited_electric_cooking: 1.0
+  heating_and_air_conditioning_included: false
+  crew8_daily_reference_kwh: 6.64
+  crew_scaling_note: Only desalination scales with crew; other 5.2 kWh/day fixed.
+    Cooking and ventilation to refine.
+kite:
+  areas_m2:
+  - 25
+  - 40
+  - 60
+  wing_relative_speeds_m_s:
+  - 8
+  - 12
+  - 16
+  aerodynamic_resultant_coefficient: 1.1
+  coefficient_is_measured: false
+  elevation_deg: 35
+  azimuth_deg: 25
+  tether_length_example_m: 200
+  force_case_N: 10000
+  load_cases_N:
+  - 10000
+  - 20000
+  - 30000
+  attachment_relative_to_cg_m:
+  - 4
+  - 0
+  - 1
+propulsion:
+  example_total_dc_power_kw:
+  - 10
+  - 20
+  - 30
+  - 40
+  nominal_bus_voltages_V:
+  - 51.2
+  - 102.4
+  example_each_motor_shaft_kw:
+  - 10
+  - 15
+  - 20
+  example_rpm:
+  - 900
+  - 1500
+  motor_efficiency: 0.92
+  propeller_diameter_m: 0.45
+  cable_loop_length_m: 20
+  cable_copper_resistivity_ohm_mm2_m: 0.0175
+  cable_sections_mm2:
+  - 70
+  - 120
+  components_selected: false
+water:
+  consumption_l_person_day: 15
+  stored_l_example: 400
+  watermaker_specific_wh_l: 12
+mass:
+  hull_bridge_kg: 3200
+  interiors_kg: 850
+  conventional_ship_systems_kg: 450
+  kite_launch_system_kg: 250
+  propulsion_kg: 200
+  power_distribution_kg: 150
+  pv_installed_kg_m2: 10
+  dry_mass_contingency_fraction: 0.15
+  person_with_immediate_gear_kg: 90
+  base_food_kg_person_day: 1
+  provisions_days: 30
+  cases:
+  - name: lean
+    label: 2 человека, лёгкий
+    people: 2
+    battery_kwh: 20
+    roof_fraction: 0.7
+    water_kg: 300
+    spare_kg: 150
+    baggage_kg: 100
+  - name: central
+    label: 2 человека, опорный
+    people: 2
+    battery_kwh: 40
+    roof_fraction: 0.8
+    water_kg: 400
+    spare_kg: 250
+    baggage_kg: 120
+  - name: extended
+    label: 8 человек, переход
+    people: 8
+    battery_kwh: 60
+    roof_fraction: 0.85
+    water_kg: 600
+    spare_kg: 350
+    baggage_kg: 240
+  provisions_days_are_assumed: true
+structure:
+  glass_laminate_density_kg_m3: 1850
+  glass_face_thickness_example_m: 0.0012
+  core_thickness_example_m: 0.02
+  core_density_example_kg_m3: 80
+  extra_bonding_finish_kg_m2: 0.6
+  face_modulus_example_Pa: 20000000000
+  core_shear_modulus_example_Pa: 25000000
+  strip_spans_m:
+  - 0.3
+  - 0.5
+  - 0.7
+  trial_uniform_pressures_kpa:
+  - 10
+  - 30
+  - 50
+  pressure_and_layup_are_normatively_approved: false
+mission:
+  operating_area: world circumnavigation and passages around all continents
+  permanent_crew: 2
+  max_passage_crew: 8
+  polar_route: null
+  route_seasons: null
+  unresupplied_days_approved: null

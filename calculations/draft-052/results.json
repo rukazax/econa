@@ -1,0 +1,599 @@
+{
+  "revision": 1,
+  "date": "2026-10-11",
+  "status": "PASS",
+  "requirement": {
+    "id": "DRAFT-001",
+    "max_draft_m": 0.52,
+    "reference": "float hull skin",
+    "confirmed_by_user": true,
+    "appendages_included": false
+  },
+  "source_sha256": "2017ed784828a44002d722219b461f099f2ce543aaeb2514e268bc50aad25202",
+  "independent": {
+    "draft_m": 0.52,
+    "volume_m3": 6.77473050417466,
+    "mass_kg": 6944.098766779027,
+    "LCB_m": -0.6875874950766016,
+    "KB_m": 0.3218507317983106,
+    "wetted_area_m2": 33.944293350794126,
+    "integral_x2_m5": 56.22020356271863,
+    "integral_y2_m5": 64.57054881963307,
+    "waterplane_area_m2": 20.579338314239415,
+    "IT_m4": 196.40740788958055,
+    "IL_m4": 222.35203917327112
+  },
+  "ship": {
+    "mass_kg": 6944.098766779229,
+    "volume_m3": 6.774730504174857,
+    "LCB_m": -0.6875874950766598,
+    "TCB_m": 1.4414780032920921e-15,
+    "KB_m": 0.32185073179831486,
+    "waterplane_area_m2": 20.579338337549657,
+    "IT_m4": 196.40740795743065,
+    "IL_m4": 222.3520396414641,
+    "waterplanes": 2,
+    "elapsed_seconds": 36.25555753707886
+  },
+  "mass_limits_upright": [
+    {
+      "density_kg_m3": 1025,
+      "water": "Морская вода",
+      "mass_kg": 6944.098766779027
+    },
+    {
+      "density_kg_m3": 1000,
+      "water": "Пресная вода",
+      "mass_kg": 6774.73050417466
+    }
+  ],
+  "previous_cases": [
+    {
+      "name": "lean",
+      "label": "2 человека, лёгкий",
+      "mass_kg": 7053.670256336587,
+      "old_draft_m": 0.525185498,
+      "reduction_to_052_sea_kg": 109.5714895575602,
+      "reduction_to_052_fresh_kg": 278.93975216192666,
+      "complies_with_new_draft_limit": false
+    },
+    {
+      "name": "central",
+      "label": "2 человека, опорный",
+      "mass_kg": 7502.051721527528,
+      "old_draft_m": 0.546231282,
+      "reduction_to_052_sea_kg": 557.9529547485008,
+      "reduction_to_052_fresh_kg": 727.3212173528673,
+      "complies_with_new_draft_limit": false
+    },
+    {
+      "name": "extended",
+      "label": "8 человек, переход",
+      "mass_kg": 8856.242454123,
+      "old_draft_m": 0.608360845,
+      "reduction_to_052_sea_kg": 1912.1436873439725,
+      "reduction_to_052_fresh_kg": 2081.511949948339,
+      "complies_with_new_draft_limit": false
+    }
+  ],
+  "working_loaded_mass_target_kg": 6500,
+  "working_target_is_proposed": true,
+  "dry_allocations": [
+    {
+      "item": "Корпус, мост и надстройка",
+      "target_kg": 2500
+    },
+    {
+      "item": "Интерьер",
+      "target_kg": 300
+    },
+    {
+      "item": "Судовые системы",
+      "target_kg": 350
+    },
+    {
+      "item": "Кайт и запуск",
+      "target_kg": 220
+    },
+    {
+      "item": "Установленные моторы и движители",
+      "target_kg": 200
+    },
+    {
+      "item": "Распределение энергии",
+      "target_kg": 130
+    },
+    {
+      "item": "PV с креплениями",
+      "target_kg": 197.43627958915454
+    },
+    {
+      "item": "АКБ 30 кВтч: прежние условные 115 Втч/кг",
+      "target_kg": 260.8695652173913
+    },
+    {
+      "item": "Локальный ИИ и дополнительные датчики: резерв",
+      "target_kg": 30
+    }
+  ],
+  "dry_subtotal_kg": 4188.305844806546,
+  "dry_contingency_fraction": 0.15,
+  "dry_contingency_kg": 628.2458767209819,
+  "proposed_cases": [
+    {
+      "people": 2,
+      "mass_kg": 5676.551721527528,
+      "draft_by_density_m": {
+        "1000": 0.4653520028554435,
+        "1025": 0.4582286629945759
+      },
+      "payload": [
+        {
+          "item": "Люди с непосредственным снаряжением",
+          "target_kg": 180
+        },
+        {
+          "item": "Вода",
+          "target_kg": 300
+        },
+        {
+          "item": "Продукты на условные 30 суток",
+          "target_kg": 60
+        },
+        {
+          "item": "Запчасти и инструмент",
+          "target_kg": 220
+        },
+        {
+          "item": "Прочий багаж",
+          "target_kg": 100
+        }
+      ],
+      "fresh_water_mass_headroom_to_052_kg": 1098.1787826471327
+    },
+    {
+      "people": 8,
+      "mass_kg": 6476.551721527528,
+      "draft_by_density_m": {
+        "1000": 0.5054379614368227,
+        "1025": 0.4976583499600801
+      },
+      "payload": [
+        {
+          "item": "Люди с непосредственным снаряжением",
+          "target_kg": 720
+        },
+        {
+          "item": "Вода",
+          "target_kg": 300
+        },
+        {
+          "item": "Продукты на условные 30 суток",
+          "target_kg": 240
+        },
+        {
+          "item": "Запчасти и инструмент",
+          "target_kg": 220
+        },
+        {
+          "item": "Прочий багаж",
+          "target_kg": 180
+        }
+      ],
+      "fresh_water_mass_headroom_to_052_kg": 298.1787826471327
+    }
+  ],
+  "motors": {
+    "baseline": "Golden Motor HPM-20K, liquid cooled, user 2020 reference",
+    "bare_mass_kg_each": 45,
+    "bare_pair_mass_kg": 90,
+    "installed_pair_mass_budget_kg": 200,
+    "installed_budget_is_assumed": true,
+    "rated_table_shaft_power_W": 20000,
+    "power_from_rated_table_torque_rpm_W": 18430.67690106012,
+    "sample_points": [
+      {
+        "sample": "96V_2020",
+        "row": 1.0,
+        "voltage_V": 96.89,
+        "current_reported_A": 21.74,
+        "input_power_W": 2048.0,
+        "torque_Nm": 2.2,
+        "speed_rpm": 4026.4,
+        "output_power_W": 927.4,
+        "eff_total_reported_pct": 45.3,
+        "time_s": 0.0,
+        "eff_dc_shaft_calculated_pct": 45.283203125,
+        "shaft_power_from_torque_W": 927.615968430356,
+        "shaft_power_relative_difference": 0.00023287516751783753,
+        "dc_power_UI_relative_difference": 0.028510058593749887
+      },
+      {
+        "sample": "96V_2020",
+        "row": 5.0,
+        "voltage_V": 96.69,
+        "current_reported_A": 42.27,
+        "input_power_W": 4065.0,
+        "torque_Nm": 7.4,
+        "speed_rpm": 3899.8,
+        "output_power_W": 3021.0,
+        "eff_total_reported_pct": 74.3,
+        "time_s": 5.07,
+        "eff_dc_shaft_calculated_pct": 74.31734317343174,
+        "shaft_power_from_torque_W": 3022.057147515804,
+        "shaft_power_relative_difference": 0.0003499329744468687,
+        "dc_power_UI_relative_difference": 0.0054332841328414245
+      },
+      {
+        "sample": "96V_2020",
+        "row": 10.0,
+        "voltage_V": 96.34,
+        "current_reported_A": 78.01,
+        "input_power_W": 7507.0,
+        "torque_Nm": 16.5,
+        "speed_rpm": 3697.8,
+        "output_power_W": 6388.0,
+        "eff_total_reported_pct": 85.1,
+        "time_s": 10.14,
+        "eff_dc_shaft_calculated_pct": 85.09391234847476,
+        "shaft_power_from_torque_W": 6389.339722944385,
+        "shaft_power_relative_difference": 0.00020972494433083242,
+        "dc_power_UI_relative_difference": 0.001130065272412546
+      },
+      {
+        "sample": "96V_2020",
+        "row": 15.0,
+        "voltage_V": 96.01,
+        "current_reported_A": 109.1,
+        "input_power_W": 10460.0,
+        "torque_Nm": 25.2,
+        "speed_rpm": 3533.3,
+        "output_power_W": 9322.0,
+        "eff_total_reported_pct": 89.1,
+        "time_s": 15.21,
+        "eff_dc_shaft_calculated_pct": 89.12045889101339,
+        "shaft_power_from_torque_W": 9324.159031260206,
+        "shaft_power_relative_difference": 0.0002316060137530214,
+        "dc_power_UI_relative_difference": 0.0014044933078394563
+      },
+      {
+        "sample": "96V_2020",
+        "row": 20.0,
+        "voltage_V": 95.7,
+        "current_reported_A": 140.8,
+        "input_power_W": 13452.0,
+        "torque_Nm": 33.7,
+        "speed_rpm": 3394.8,
+        "output_power_W": 11978.0,
+        "eff_total_reported_pct": 89.0,
+        "time_s": 20.28,
+        "eff_dc_shaft_calculated_pct": 89.04252155813262,
+        "shaft_power_from_torque_W": 11980.43845172345,
+        "shaft_power_relative_difference": 0.00020357753576976715,
+        "dc_power_UI_relative_difference": 0.0016770740410348877
+      },
+      {
+        "sample": "96V_2020",
+        "row": 25.0,
+        "voltage_V": 95.46,
+        "current_reported_A": 171.7,
+        "input_power_W": 16347.0,
+        "torque_Nm": 42.8,
+        "speed_rpm": 3267.0,
+        "output_power_W": 14641.0,
+        "eff_total_reported_pct": 89.6,
+        "time_s": 25.35,
+        "eff_dc_shaft_calculated_pct": 89.56383434269284,
+        "shaft_power_from_torque_W": 14642.712030969738,
+        "shaft_power_relative_difference": 0.00011693401883330424,
+        "dc_power_UI_relative_difference": 0.002659937603229726
+      },
+      {
+        "sample": "96V_2020",
+        "row": 30.0,
+        "voltage_V": 95.24,
+        "current_reported_A": 201.3,
+        "input_power_W": 19117.0,
+        "torque_Nm": 51.6,
+        "speed_rpm": 3156.3,
+        "output_power_W": 17053.0,
+        "eff_total_reported_pct": 89.2,
+        "time_s": 30.42,
+        "eff_dc_shaft_calculated_pct": 89.20332688183292,
+        "shaft_power_from_torque_W": 17055.1912951438,
+        "shaft_power_relative_difference": 0.00012849909950149094,
+        "dc_power_UI_relative_difference": 0.002867186273997056
+      },
+      {
+        "sample": "96V_2020",
+        "row": 35.0,
+        "voltage_V": 94.97,
+        "current_reported_A": 230.6,
+        "input_power_W": 21815.0,
+        "torque_Nm": 60.2,
+        "speed_rpm": 3057.0,
+        "output_power_W": 19268.0,
+        "eff_total_reported_pct": 88.3,
+        "time_s": 35.49,
+        "eff_dc_shaft_calculated_pct": 88.32454732981893,
+        "shaft_power_from_torque_W": 19271.723142328156,
+        "shaft_power_relative_difference": 0.00019322930912162747,
+        "dc_power_UI_relative_difference": 0.003900160440064108
+      },
+      {
+        "sample": "96V_2020",
+        "row": 37.0,
+        "voltage_V": 94.85,
+        "current_reported_A": 241.5,
+        "input_power_W": 22816.0,
+        "torque_Nm": 63.8,
+        "speed_rpm": 3018.4,
+        "output_power_W": 20163.0,
+        "eff_total_reported_pct": 88.4,
+        "time_s": 37.52,
+        "eff_dc_shaft_calculated_pct": 88.37219495091163,
+        "shaft_power_from_torque_W": 20166.293744832954,
+        "shaft_power_relative_difference": 0.00016335589113494826,
+        "dc_power_UI_relative_difference": 0.003956653225806356
+      },
+      {
+        "sample": "96V_2020",
+        "row": 40.0,
+        "voltage_V": 94.7,
+        "current_reported_A": 258.0,
+        "input_power_W": 24320.0,
+        "torque_Nm": 69.1,
+        "speed_rpm": 2962.6,
+        "output_power_W": 21434.0,
+        "eff_total_reported_pct": 88.1,
+        "time_s": 40.56,
+        "eff_dc_shaft_calculated_pct": 88.13322368421052,
+        "shaft_power_from_torque_W": 21437.773784359528,
+        "shaft_power_relative_difference": 0.00017606533356012789,
+        "dc_power_UI_relative_difference": 0.004629934210526406
+      },
+      {
+        "sample": "96V_2020",
+        "row": 45.0,
+        "voltage_V": 94.41,
+        "current_reported_A": 287.2,
+        "input_power_W": 26959.0,
+        "torque_Nm": 77.9,
+        "speed_rpm": 2867.8,
+        "output_power_W": 23390.0,
+        "eff_total_reported_pct": 86.8,
+        "time_s": 45.63,
+        "eff_dc_shaft_calculated_pct": 86.76137838940613,
+        "shaft_power_from_torque_W": 23394.56293973529,
+        "shaft_power_relative_difference": 0.00019508079244504262,
+        "dc_power_UI_relative_difference": 0.0057699469564894725
+      },
+      {
+        "sample": "72V_2020",
+        "row": 1.0,
+        "voltage_V": 72.6,
+        "current_reported_A": 29.52,
+        "input_power_W": 1933.0,
+        "torque_Nm": 2.2,
+        "speed_rpm": 4207.3,
+        "output_power_W": 969.1,
+        "eff_total_reported_pct": 50.1,
+        "time_s": 0.0,
+        "eff_dc_shaft_calculated_pct": 50.134505949301605,
+        "shaft_power_from_torque_W": 969.2923365728782,
+        "shaft_power_relative_difference": 0.00019846927342705796,
+        "dc_power_UI_relative_difference": 0.10871805483704065
+      },
+      {
+        "sample": "72V_2020",
+        "row": 5.0,
+        "voltage_V": 72.27,
+        "current_reported_A": 58.83,
+        "input_power_W": 4154.0,
+        "torque_Nm": 7.7,
+        "speed_rpm": 4094.0,
+        "output_power_W": 3301.0,
+        "eff_total_reported_pct": 79.5,
+        "time_s": 5.07,
+        "eff_dc_shaft_calculated_pct": 79.46557534906114,
+        "shaft_power_from_torque_W": 3301.164616441131,
+        "shaft_power_relative_difference": 4.986865832501502e-05,
+        "dc_power_UI_relative_difference": 0.02350604236880104
+      },
+      {
+        "sample": "72V_2020",
+        "row": 10.0,
+        "voltage_V": 71.78,
+        "current_reported_A": 107.6,
+        "input_power_W": 7641.0,
+        "torque_Nm": 16.2,
+        "speed_rpm": 3938.1,
+        "output_power_W": 6680.0,
+        "eff_total_reported_pct": 87.4,
+        "time_s": 10.14,
+        "eff_dc_shaft_calculated_pct": 87.4231121580945,
+        "shaft_power_from_torque_W": 6680.82925571506,
+        "shaft_power_relative_difference": 0.00012414007710476708,
+        "dc_power_UI_relative_difference": 0.010800680539196354
+      },
+      {
+        "sample": "72V_2020",
+        "row": 15.0,
+        "voltage_V": 71.37,
+        "current_reported_A": 155.8,
+        "input_power_W": 11048.0,
+        "torque_Nm": 25.1,
+        "speed_rpm": 3779.9,
+        "output_power_W": 9933.0,
+        "eff_total_reported_pct": 89.9,
+        "time_s": 15.21,
+        "eff_dc_shaft_calculated_pct": 89.9076755973932,
+        "shaft_power_from_torque_W": 9935.33807965773,
+        "shaft_power_relative_difference": 0.0002353850455783142,
+        "dc_power_UI_relative_difference": 0.006466871832005949
+      },
+      {
+        "sample": "72V_2020",
+        "row": 20.0,
+        "voltage_V": 70.99,
+        "current_reported_A": 198.9,
+        "input_power_W": 14054.0,
+        "torque_Nm": 33.8,
+        "speed_rpm": 3635.9,
+        "output_power_W": 12868.0,
+        "eff_total_reported_pct": 91.6,
+        "time_s": 20.28,
+        "eff_dc_shaft_calculated_pct": 91.56112138892841,
+        "shaft_power_from_torque_W": 12869.368848217498,
+        "shaft_power_relative_difference": 0.00010637614372850893,
+        "dc_power_UI_relative_difference": 0.004689839191689203
+      },
+      {
+        "sample": "72V_2020",
+        "row": 25.0,
+        "voltage_V": 70.65,
+        "current_reported_A": 240.4,
+        "input_power_W": 16907.0,
+        "torque_Nm": 42.2,
+        "speed_rpm": 3496.5,
+        "output_power_W": 15445.0,
+        "eff_total_reported_pct": 91.4,
+        "time_s": 25.35,
+        "eff_dc_shaft_calculated_pct": 91.35269415035192,
+        "shaft_power_from_torque_W": 15451.640723342576,
+        "shaft_power_relative_difference": 0.0004299594265183662,
+        "dc_power_UI_relative_difference": 0.004569704855976935
+      },
+      {
+        "sample": "72V_2020",
+        "row": 30.0,
+        "voltage_V": 70.3,
+        "current_reported_A": 278.3,
+        "input_power_W": 19481.0,
+        "torque_Nm": 51.0,
+        "speed_rpm": 3341.5,
+        "output_power_W": 17843.0,
+        "eff_total_reported_pct": 91.6,
+        "time_s": 30.42,
+        "eff_dc_shaft_calculated_pct": 91.59180740208409,
+        "shaft_power_from_torque_W": 17845.974148349498,
+        "shaft_power_relative_difference": 0.00016668432155456686,
+        "dc_power_UI_relative_difference": 0.0042857142857143675
+      },
+      {
+        "sample": "72V_2020",
+        "row": 34.0,
+        "voltage_V": 70.24,
+        "current_reported_A": 284.4,
+        "input_power_W": 19929.0,
+        "torque_Nm": 56.2,
+        "speed_rpm": 3070.0,
+        "output_power_W": 18064.0,
+        "eff_total_reported_pct": 90.6,
+        "time_s": 34.48,
+        "eff_dc_shaft_calculated_pct": 90.64177831301119,
+        "shaft_power_from_torque_W": 18067.71822981538,
+        "shaft_power_relative_difference": 0.00020583646010730933,
+        "dc_power_UI_relative_difference": 0.0023712178232724967
+      },
+      {
+        "sample": "72V_2020",
+        "row": 35.0,
+        "voltage_V": 70.21,
+        "current_reported_A": 285.1,
+        "input_power_W": 19964.0,
+        "torque_Nm": 57.8,
+        "speed_rpm": 2978.9,
+        "output_power_W": 18027.0,
+        "eff_total_reported_pct": 90.3,
+        "time_s": 35.49,
+        "eff_dc_shaft_calculated_pct": 90.29753556401523,
+        "shaft_power_from_torque_W": 18030.69141880017,
+        "shaft_power_relative_difference": 0.0002047716647344717,
+        "dc_power_UI_relative_difference": 0.0026483169705469435
+      },
+      {
+        "sample": "72V_2020",
+        "row": 37.0,
+        "voltage_V": 70.24,
+        "current_reported_A": 281.7,
+        "input_power_W": 19714.0,
+        "torque_Nm": 60.9,
+        "speed_rpm": 2781.3,
+        "output_power_W": 17734.0,
+        "eff_total_reported_pct": 90.0,
+        "time_s": 37.52,
+        "eff_dc_shaft_calculated_pct": 89.95637617936492,
+        "shaft_power_from_torque_W": 17737.554644281463,
+        "shaft_power_relative_difference": 0.00020044233007008964,
+        "dc_power_UI_relative_difference": 0.003683067870548673
+      },
+      {
+        "sample": "72V_2020",
+        "row": 40.0,
+        "voltage_V": 70.24,
+        "current_reported_A": 283.8,
+        "input_power_W": 19873.0,
+        "torque_Nm": 67.4,
+        "speed_rpm": 2497.7,
+        "output_power_W": 17626.0,
+        "eff_total_reported_pct": 88.7,
+        "time_s": 40.56,
+        "eff_dc_shaft_calculated_pct": 88.69320183163086,
+        "shaft_power_from_torque_W": 17629.045081224023,
+        "shaft_power_relative_difference": 0.00017276076387287564,
+        "dc_power_UI_relative_difference": 0.0030751270568107982
+      },
+      {
+        "sample": "72V_2020",
+        "row": 45.0,
+        "voltage_V": 70.31,
+        "current_reported_A": 276.0,
+        "input_power_W": 19352.0,
+        "torque_Nm": 76.9,
+        "speed_rpm": 2089.8,
+        "output_power_W": 16827.0,
+        "eff_total_reported_pct": 86.9,
+        "time_s": 45.63,
+        "eff_dc_shaft_calculated_pct": 86.95225299710624,
+        "shaft_power_from_torque_W": 16829.053172753098,
+        "shaft_power_relative_difference": 0.00012201656582265982,
+        "dc_power_UI_relative_difference": 0.002767672591980225
+      }
+    ],
+    "sample_curve_is_not_efficiency_map": true,
+    "heat_at_20kw_and_0_884_dc_eff_kW": 2.624434389140273,
+    "hypothetical_pair_20kw_each_dc_kw": 45.248868778280546,
+    "hpm10_bare_pair_saving_kg": 56,
+    "hpm10_saving_draft_mm_at_052_sea": 2.65480578176124,
+    "hpm10_not_selected": true,
+    "nominal_voltage_V": 72,
+    "voltage_selected_by_user": true,
+    "propulsion_inputs": "calculations/draft-052/propulsion-inputs.yaml",
+    "selected_voltage_test": "72V_2020, serial 2072122003001"
+  },
+  "water_reserve_days_for_8_at_15L_day": 2.5,
+  "all_bridge_and_superstructure_geometry_retained": true,
+  "verification": {
+    "relative_errors": {
+      "mass_kg": 2.907617396796383e-14,
+      "volume_m3": 2.910456866910442e-14,
+      "LCB_m": 8.4769879048378e-14,
+      "KB_m": 1.3280562144209762e-14,
+      "waterplane_area_m2": 1.1327012690636794e-09,
+      "IT_m4": 3.454558870717321e-10,
+      "IL_m4": 2.1056383437622336e-09
+    },
+    "areas_stations": 41,
+    "areas_integrated_volume_m3": 6.774750616731812,
+    "areas_relative_error": 2.9687612134210703e-06
+  },
+  "limitations": [
+    "Upright geometric mass is not an approved safe displacement.",
+    "Maximum local draft with heel/trim needs real CG and load equilibrium.",
+    "No materials, physical scantlings, tank free surfaces or confirmed lightship mass.",
+    "Allocation does not authorize removal of structural members or safety equipment.",
+    "Motor examples do not prove marine durability or continuous shaft power.",
+    "30 kWh battery, 300 kg water and 30 kg AI allocation are proposals, not selected hardware."
+  ]
+}

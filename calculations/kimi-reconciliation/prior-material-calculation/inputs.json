@@ -1,0 +1,245 @@
+{
+  "date": "2026-10-11",
+  "user_pine_layers_mm": [
+    8,
+    8,
+    8
+  ],
+  "user_relative_angles_deg": [
+    0,
+    45,
+    90
+  ],
+  "absolute_angle_assumption": "outside to inside, first layer longitudinal X; no user confirmation of absolute orientation",
+  "user_external_T11_layers": {
+    "below_052": 3,
+    "above_052": 2
+  },
+  "fabric_dry_kg_m2": 0.385,
+  "fiber_density_kg_m3": 2550,
+  "resin_density_kg_m3": 1150,
+  "resin_fiber_mass_ratio": 1.0,
+  "resin_ratio_sensitivity": [
+    0.7,
+    1.0,
+    1.4
+  ],
+  "glue_kg_m2_per_wood_or_core_interface": 0.22,
+  "wood_sealing_kg_m2_per_face": 0.15,
+  "finish_kg_m2": {
+    "below": 0.6,
+    "above": 0.4
+  },
+  "installed_joint_patch_allowance_fraction": 0.1,
+  "procurement_waste_fraction": 0.15,
+  "pressure_Pa": 20000,
+  "span_m": 0.6,
+  "deflection_limit_span_divisor": 100,
+  "pressure_sensitivity_Pa": [
+    10000,
+    20000,
+    40000
+  ],
+  "span_sensitivity_m": [
+    0.4,
+    0.6,
+    0.8
+  ],
+  "core_thickness_grid_mm": [
+    15,
+    20,
+    25,
+    30,
+    40,
+    50
+  ],
+  "fsf_face_grid_mm": [
+    3,
+    4,
+    6,
+    8
+  ],
+  "pine_inner_face_grid_mm": [
+    4,
+    6,
+    8,
+    10
+  ],
+  "inner_glass_layer_grid": [
+    2,
+    3,
+    4,
+    6
+  ],
+  "source_cad_sha256": "7ae0c6e91c30dc92f1f46d84660eb2e1f431d6f56efa7243a7c15a9a608791ef",
+  "materials": {
+    "pine": {
+      "rho": 500,
+      "E1": 10000000000.0,
+      "E2": 500000000.0,
+      "G12": 600000000.0,
+      "G13": 600000000.0,
+      "G23": 60000000.0,
+      "nu12": 0.3,
+      "status": "scenario, clear dry wood; species/grade/moisture not selected",
+      "limits_MPa": [
+        20,
+        2,
+        3
+      ]
+    },
+    "fsf": {
+      "rho": 680,
+      "E1": 7000000000.0,
+      "E2": 3000000000.0,
+      "G12": 600000000.0,
+      "G13": 450000000.0,
+      "G23": 450000000.0,
+      "nu12": 0.2,
+      "status": "E: SVEZA FSF minimum for 6.5-40 mm; extrapolation for 3-6 mm. Density/G/strength screening assumptions",
+      "limits_MPa": [
+        20,
+        10,
+        3
+      ]
+    },
+    "glass": {
+      "rho": null,
+      "E1": 20000000000.0,
+      "E2": 14000000000.0,
+      "G12": 4500000000.0,
+      "G13": 3000000000.0,
+      "G23": 3000000000.0,
+      "nu12": 0.16,
+      "status": "wet-layup T11/epoxy scenario, not measured laminate properties",
+      "limits_MPa": [
+        80,
+        60,
+        25
+      ]
+    },
+    "XPS": {
+      "rho": 45,
+      "E1": 20000000.0,
+      "E2": 20000000.0,
+      "G12": 6000000.0,
+      "G13": 6000000.0,
+      "G23": 6000000.0,
+      "nu12": 0.25,
+      "status": "E: H25 historical Technoplex analogue; G=6 MPa hypothetical sensitivity midpoint, NOT measured XPS property",
+      "shear_strength_MPa": null
+    },
+    "EPS": {
+      "rho": 30,
+      "E1": 10000000.0,
+      "E2": 10000000.0,
+      "G12": 6000000.0,
+      "G13": 6000000.0,
+      "G23": 6000000.0,
+      "nu12": 0.25,
+      "status": "E/density scenario; generic EPS G range 4-10 MPa in INNER-069; not a product passport",
+      "shear_strength_MPa": null
+    },
+    "PIR": {
+      "rho": 40,
+      "E1": 20000000.0,
+      "E2": 20000000.0,
+      "G12": 10000000.0,
+      "G13": 10000000.0,
+      "G23": 10000000.0,
+      "nu12": 0.25,
+      "status": "hypothetical E/G scenario; generic PUR data do not qualify PIR boards",
+      "shear_strength_MPa": null
+    },
+    "PVC": {
+      "rho": 80,
+      "E1": 80000000.0,
+      "E2": 80000000.0,
+      "G12": 23000000.0,
+      "G13": 23000000.0,
+      "G23": 23000000.0,
+      "nu12": 0.25,
+      "status": "Divinycell H80: nominal density, minimum compressive E used as in-plane isotropic analogue; minimum G and shear strength at 23C",
+      "shear_strength_MPa": 0.95
+    },
+    "SAN": {
+      "rho": 85,
+      "E1": 78000000.0,
+      "E2": 78000000.0,
+      "G12": 34000000.0,
+      "G13": 34000000.0,
+      "G23": 34000000.0,
+      "nu12": 0.25,
+      "status": "Corecell M80: typical E/G/strength, NOT guaranteed minimum; compressive E used as in-plane analogue",
+      "shear_strength_MPa": 1.15
+    },
+    "balsa": {
+      "rho": 155,
+      "E1": 100000000.0,
+      "E2": 100000000.0,
+      "G12": 166000000.0,
+      "G13": 166000000.0,
+      "G23": 166000000.0,
+      "nu12": 0.25,
+      "status": "Diab ProBalsa 2022 nominal density/G=24076 psi converted to 166 MPa/shear=435 psi converted to 3 MPa; in-plane E scenario, not out-of-plane compression E",
+      "shear_strength_MPa": 3.0
+    },
+    "PVC45": {
+      "rho": 48,
+      "E1": 45000000.0,
+      "E2": 45000000.0,
+      "G12": 12000000.0,
+      "G13": 12000000.0,
+      "G23": 12000000.0,
+      "nu12": 0.25,
+      "status": "PVC45: same passport basis as PVC; rho nominal, E compressive analogue, G/shear minimum for PVC and typical for SAN",
+      "shear_strength_MPa": 0.46
+    },
+    "PVC60": {
+      "rho": 60,
+      "E1": 60000000.0,
+      "E2": 60000000.0,
+      "G12": 16000000.0,
+      "G13": 16000000.0,
+      "G23": 16000000.0,
+      "nu12": 0.25,
+      "status": "PVC60: same passport basis as PVC; rho nominal, E compressive analogue, G/shear minimum for PVC and typical for SAN",
+      "shear_strength_MPa": 0.63
+    },
+    "PVC100": {
+      "rho": 100,
+      "E1": 115000000.0,
+      "E2": 115000000.0,
+      "G12": 28000000.0,
+      "G13": 28000000.0,
+      "G23": 28000000.0,
+      "nu12": 0.25,
+      "status": "PVC100: same passport basis as PVC; rho nominal, E compressive analogue, G/shear minimum for PVC and typical for SAN",
+      "shear_strength_MPa": 1.4
+    },
+    "SAN60": {
+      "rho": 65,
+      "E1": 48000000.0,
+      "E2": 48000000.0,
+      "G12": 23000000.0,
+      "G13": 23000000.0,
+      "G23": 23000000.0,
+      "nu12": 0.25,
+      "status": "SAN60: same passport basis as SAN; rho nominal, E compressive analogue, G/shear minimum for PVC and typical for SAN",
+      "shear_strength_MPa": 0.78
+    },
+    "SAN100": {
+      "rho": 107.5,
+      "E1": 112000000.0,
+      "E2": 112000000.0,
+      "G12": 44000000.0,
+      "G13": 44000000.0,
+      "G23": 44000000.0,
+      "nu12": 0.25,
+      "status": "SAN100: same passport basis as SAN; rho nominal, E compressive analogue, G/shear minimum for PVC and typical for SAN",
+      "shear_strength_MPa": 1.47
+    }
+  },
+  "scope": "independent flat one-way strips in X/Y with full ABD coupling, free membrane resultants; transverse shear added; no shell curvature, frame stiffness, impact, fatigue, fracture, bond failure or whole-vessel strength solved",
+  "screening_strength_limits": "assigned reduced scenario stresses, not regulatory allowables. Core shear threshold min/3 only for PVC; typical/3 for SAN conditional. Other foams/balsa unqualified."
+}

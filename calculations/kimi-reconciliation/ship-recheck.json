@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-16",
+  "FreeCAD": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "source_sha256": "2017ed784828a44002d722219b461f099f2ce543aaeb2514e268bc50aad25202",
+  "records": [
+    {
+      "name": "PortHull",
+      "solids": 1,
+      "closed": true,
+      "valid": true,
+      "volume_mm3": 25216818888.781033,
+      "faces": 19140
+    },
+    {
+      "name": "StarboardHull",
+      "solids": 1,
+      "closed": true,
+      "valid": true,
+      "volume_mm3": 25216818888.781033,
+      "faces": 19140
+    }
+  ],
+  "both_positive_closed_valid_solids": true,
+  "draft_m": 0.52,
+  "mass_kg": 6944.098766779229,
+  "volume_m3": 6.774730504174857,
+  "LCB_m": -0.6875874950766595,
+  "KB_m": 0.32185073179831486,
+  "waterplane_m2": 20.579338337549657,
+  "IT_m4": 196.40740795743065,
+  "IL_origin_m4": 222.3520396414641,
+  "waterplanes": 2,
+  "elapsed_seconds": 38.477017402648926,
+  "source_unchanged": true,
+  "status": "PASS"
+}

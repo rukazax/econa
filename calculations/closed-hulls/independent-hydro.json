@@ -1,0 +1,30 @@
+{
+  "method": "Independent signed tetrahedral hydrostatic integration of exact facets.\n\nClipped triangles retain their winding. The origin is on the test waterplane,\nso its artificial cap has zero signed tetrahedral volume and first moments.\nThis calculation has no OCC/FreeCAD volume or boolean dependency.\n",
+  "test_cases": [
+    {
+      "test_draft_m": 0.4,
+      "total_volume_m3": 4.4503085298254526,
+      "total_displacement_at_1025_kg_m3": 4561.566243071089,
+      "LCB_from_mid_LOA_m": -0.5260710845353035,
+      "KB_m": 0.2489775599387129,
+      "waterplane_area_m2_volume_derivative": 17.995446252028202
+    },
+    {
+      "test_draft_m": 0.6,
+      "total_volume_m3": 8.45994098781254,
+      "total_displacement_at_1025_kg_m3": 8671.439512507854,
+      "LCB_from_mid_LOA_m": -0.7806609128598191,
+      "KB_m": 0.36934805721215114,
+      "waterplane_area_m2_volume_derivative": 21.517822074015314
+    },
+    {
+      "test_draft_m": 0.8,
+      "total_volume_m3": 12.984975116658465,
+      "total_displacement_at_1025_kg_m3": 13309.599494574926,
+      "LCB_from_mid_LOA_m": -0.9180944373966309,
+      "KB_m": 0.485141645720431,
+      "waterplane_area_m2_volume_derivative": 23.72792206060126
+    }
+  ],
+  "status": "Validation drafts only, NOT design conditions"
+}

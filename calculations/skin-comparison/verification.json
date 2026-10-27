@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "checks": {
+    "numpy_boolean_core_rejection": true,
+    "isotropic_rotation_invariance": true,
+    "homogeneous_beam_D_equals_Et3_over12": true,
+    "pressure_linearity_all_selected": true,
+    "layer_stress_integrates_to_zero_N_and_applied_M": true,
+    "mass_components_sum": true,
+    "positive_effective_D_selected": true,
+    "CAD_source_hash_unchanged": true,
+    "area_reconciles_to_CAD": true
+  }
+}

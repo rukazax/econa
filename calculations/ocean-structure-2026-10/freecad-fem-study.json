@@ -1,0 +1,22 @@
+{
+  "FreeCAD": [
+    "1",
+    "1",
+    "4",
+    "20260928 (Git shallow)",
+    "Unknown",
+    "2026/09/28 13:46:34",
+    "(HEAD detached at 4fd3bf320)",
+    "4fd3bf320d9566a27e60069fc8387448aaa3a094"
+  ],
+  "geometry": "800x50x150 mm box,4mm walls",
+  "volume_mm3": 1228800.0,
+  "material": {
+    "Density": "680 kg/m^3",
+    "Name": "Equivalent isotropic FSF scenario; not a plywood certification model",
+    "PoissonRatio": "0.3",
+    "YoungsModulus": "7000 MPa"
+  },
+  "purpose": "Local equivalent-isotropic stiffener FEM mesh convergence; NOT full hull FEM",
+  "source_assembly_edited": false
+}

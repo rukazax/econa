@@ -1,0 +1,20 @@
+{
+  "vertices_total": 8241,
+  "Mesh54_triangles": 8113,
+  "Mesh54_area_m2": 369.6905949226748,
+  "boundary_edges_after_coordinate_weld_1nm": 707,
+  "nonmanifold_edges_after_weld": 998,
+  "all_model_bbox_m": [
+    [
+      -6.51206,
+      -1.75346,
+      -3.699
+    ],
+    [
+      7.4047,
+      2.9785500000000003,
+      3.699
+    ]
+  ],
+  "scope": "Topology diagnostic after coordinate equality weld only; not solid reconstruction"
+}

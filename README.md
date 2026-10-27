@@ -22,8 +22,11 @@ The software-based engineering test environment has been restored on Windows. Hy
 
 The final weight statement and centre of gravity have not been established, and overall structural strength has not been validated. Assessments of dynamic stability, resistance and vessel performance are incomplete. Sea trials and full-scale testing have not been confirmed.
 
-This set contains only the general overview, dated progress summaries, aggregate findings and limitations. Engineering know-how, CAD, detailed calculations and raw test data remain private. It is not a completed design for construction; operational readiness and certification are not claimed.
+Images, diagrams, specifications, calculation inputs and results have been restored. CAD models, secrets and operational data remain private. It is not a completed design for construction; operational readiness and certification are not claimed.
 
 ## Project addresses
 
 [Project website](https://rukazax.github.io/econa/) · [Repository](https://github.com/rukazax/econa-project)
+
+
+[Images, diagrams, specifications and calculations](https://rukazax.github.io/econa/en/materials.html)

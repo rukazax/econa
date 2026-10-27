@@ -1,0 +1,41 @@
+{
+  "status": "unit_conversion_examples_not_hardware_measurements",
+  "source": "saved_SignalK_1.8.4_schemas",
+  "examples": [
+    {
+      "input": 1,
+      "input_unit": "kn",
+      "output": 0.5144444444444445,
+      "output_unit": "m/s"
+    },
+    {
+      "input": 30,
+      "input_unit": "deg",
+      "output": 0.5235987755982988,
+      "output_unit": "rad"
+    },
+    {
+      "input": 20,
+      "input_unit": "degC",
+      "output": 293.15,
+      "output_unit": "K"
+    },
+    {
+      "input": 3200,
+      "input_unit": "mechanical_RPM",
+      "output": 53.333333333333336,
+      "output_unit": "Hz"
+    },
+    {
+      "input": 75,
+      "input_unit": "SOC_percent",
+      "output": 0.75,
+      "output_unit": "ratio"
+    },
+    {
+      "input": 10,
+      "input_unit": "A_battery_SignalK",
+      "meaning": "charging; consumption-positive internal convention requires explicit sign inversion"
+    }
+  ]
+}
